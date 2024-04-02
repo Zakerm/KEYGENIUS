@@ -1,0 +1,30 @@
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+body
+{
+    background-color: #DFDFDF;
+    font-family: Play;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1823px;
+    margin: 0 auto;
+}
+
+.section
+{
+    padding: 43px 0 43px 0;
+}

@@ -1,0 +1,74 @@
+.game_title
+
+{
+    font-size: 96px;
+}
+
+.game_price-text
+{
+    font-size: 96px;
+    height: 125px;
+}
+
+.game_img-img
+{
+    width: 750px;
+}
+
+.price-btn
+{
+    background-color: #4DAE51;
+    /* width: 300px; */
+    padding: 5px 100px 5px 100px;
+    transition: background-color .2s linear;
+    
+}
+
+.price-btn:hover
+{
+    background-color: #397e3c;
+}
+
+.game_price-btn
+{
+    font-size: 43px;
+    color: #fff;
+}
+
+.game
+{
+    justify-content: space-between;
+}
+
+.game_price
+{
+    display: flex;
+    margin-right: 5%;
+}
+
+.game_about
+{
+    width: 500px;
+
+}
+
+.about_text
+{
+    font-size: 48px;
+    height: 50px;
+    
+}
+
+.about_info
+{
+    font-size: 48px;
+    height: 50px;
+    padding-left: 50px;
+}
+
+.game_description
+{
+    padding-top: 20px;
+    font-size: 32px;
+    width: 65%;
+}
