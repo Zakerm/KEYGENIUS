@@ -11,6 +11,8 @@ export default function HeaderRight() {
     setSearchValue("");
   };
 
+  
+
   return (
     <div className="header__right right">
       <div className="header__search">
