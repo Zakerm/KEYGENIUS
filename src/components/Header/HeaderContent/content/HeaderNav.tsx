@@ -1,21 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styles from "./HeaderNav.module.css";
 
 export default function HeaderNav() {
   return (
-    <div className="header__nav">
+    <div className={styles.header__nav}>
       <nav>
-        <ul className="header__nav-list">
-          <li className="header__nav-item">
+        <ul className={styles.header__nav_list}>
+          <li className={styles.header__nav_item}>
             <NavLink to={"#"}>Каталог игр</NavLink>
           </li>
-          <li className="header__nav-item">
+          <li className={styles.header__nav_item}>
             <NavLink to={"#"}>Поддержка</NavLink>
           </li>
-          <li className="header__nav-item">
+          <li className={styles.header__nav_item}>
             <NavLink to={"#"}>Покупки</NavLink>
           </li>
-          <li className="header__nav-item">
+          <li className={styles.header__nav_item}>
             <NavLink to={"#"}>Отзывы</NavLink>
           </li>
         </ul>

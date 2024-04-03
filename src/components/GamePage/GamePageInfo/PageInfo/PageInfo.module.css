@@ -4,18 +4,18 @@
     font-size: 96px;
 }
 
-.game_price-text
+.game_price_text
 {
     font-size: 96px;
     height: 125px;
 }
 
-.game_img-img
+.game_img_img
 {
     width: 750px;
 }
 
-.price-btn
+.price_btn
 {
     background-color: #4DAE51;
     /* width: 300px; */
@@ -24,12 +24,12 @@
     
 }
 
-.price-btn:hover
+.price_btn:hover
 {
     background-color: #397e3c;
 }
 
-.game_price-btn
+.game_price_btn
 {
     font-size: 43px;
     color: #fff;

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import logoImage from "../../../../img/main/header/logo.jpg";
 import { NavLink } from "react-router-dom";
+import styles from "./HeaderLogo.module.css";
 
 export default function HeaderLogo() {
   useEffect(() => {

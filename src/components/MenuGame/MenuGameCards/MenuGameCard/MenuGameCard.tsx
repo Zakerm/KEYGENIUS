@@ -1,7 +1,6 @@
 import React from "react";
 import { IGameCards } from "../../../../models/GameCardsModels";
-import "../../MenuGame.css";
-import "../../../../css/general.css";
+import styles from "./MenuGameCard.module.css";
 import { Link } from "react-router-dom";
 
 interface GameCardProps {
@@ -10,16 +9,28 @@ interface GameCardProps {
 
 export default function MenuGameCard(props: GameCardProps) {
   return (
-    <Link className="MenuGame_card-link" to={`/game/${props.card.id}`}>
-      <div className="MenuGame_card bg-white flex flex-col   shadow-2xl ">
-        <div className="MenuGame_card-img">
-          <img className="card-img w-full" src={props.card.image} alt="" />
+    <Link className={styles.MenuGame_card_link} to={`/game/${props.card.id}`}>
+      <div
+        className={`${styles.MenuGame_card} bg-white flex flex-col shadow-2xl`}
+      >
+        <div className={styles.MenuGame_card_img}>
+          <img
+            className={`${styles.card_img} w-full`}
+            src={props.card.image}
+            alt=""
+          />
         </div>
-        <div className="MenuGame_card-info flex flex-row items-center py-0.5 pl-1 ">
-          <div className="MenuGame_card-icon">
-            <img className="platform_img" src={props.card.platform} alt="" />
+        <div
+          className={`${styles.MenuGame_card_info} flex flex-row items-center py-0.5 pl-1`}
+        >
+          <div className={styles.MenuGame_card_icon}>
+            <img
+              className={styles.platform_img}
+              src={props.card.platform}
+              alt=""
+            />
           </div>
-          <div className="MenuGame_card-price pr-1">
+          <div className={`${styles.MenuGame_card_price} pr-1`}>
             <p className="">
               {props.card.price} {props.card.currency}
             </p>
