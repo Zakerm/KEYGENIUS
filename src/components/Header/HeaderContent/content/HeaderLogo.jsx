@@ -10,7 +10,7 @@ export default function HeaderLogo() {
   }, []);
   return (
     <NavLink to={"/"}>
-      <div className="header__logo">
+      <div className="header__logo w-full">
         <img src={logoImage} className="header__content-img" alt="logo-img" />
       </div>
     </NavLink>

@@ -1,0 +1,42 @@
+input {outline:none;}
+
+.catalog_filter
+{
+    width: 350px;
+    background-color: #D5CFCF;
+    
+}
+
+.input_price
+{
+    width: 100px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.filter_price
+{
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #DFDFDF;
+    width: 325px;
+}
+
+.price_from p,
+.price_to p
+{
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.price_title
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.price_variation
+{
+
+}

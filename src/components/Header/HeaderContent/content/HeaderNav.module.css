@@ -1,6 +1,7 @@
 .header__nav
 {
     padding-left: 20px;
+    width: 100%;
 }
 
 .header__nav_list
