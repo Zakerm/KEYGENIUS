@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logoImage from "../../../../img/main/header/logo.jpg";
+import logoImage from "../../../../../img/main/header/logo.jpg";
 import { NavLink } from "react-router-dom";
 import styles from "./HeaderLogo.module.css";
 
@@ -9,10 +9,16 @@ export default function HeaderLogo() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <NavLink to={"/"}>
-      <div className="header__logo w-full">
-        <img src={logoImage} className="header__content-img" alt="logo-img" />
-      </div>
-    </NavLink>
+    <div>
+      <NavLink to={"/"}>
+        <div className={styles.header__logo}>
+          <img
+            src={logoImage}
+            className={styles.header__content_img}
+            alt="logo-img"
+          />
+        </div>
+      </NavLink>
+    </div>
   );
 }

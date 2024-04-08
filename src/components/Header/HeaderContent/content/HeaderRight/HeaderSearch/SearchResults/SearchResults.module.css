@@ -1,0 +1,15 @@
+/* SearchResults.module.css */
+.searchResults {
+    max-height: 300px; /* Максимальная высота блока, чтобы он мог прокручиваться */
+    overflow-y: auto; /* Прокручиваемая область, если содержимое выходит за пределы */
+  }
+  
+  .gameCard {
+    width: 200px; /* Ширина карточки */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  

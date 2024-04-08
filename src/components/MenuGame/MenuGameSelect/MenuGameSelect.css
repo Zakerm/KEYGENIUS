@@ -1,6 +1,54 @@
 .MenuGame__title
 {
-    font-size: 48px;
+    font-size: 25px;
     /* display: flex;
     flex-direction: row; */
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+
+}
+
+/* планшет */
+@media (max-width:990px) {
+    .select
+    {
+        text-align: center;
+        gap: 15px;
+    }
+    .MenuGame__title
+    {
+        
+    }
+
+
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+    .MenuGame__title
+{
+    font-size: 25px;
+   
+}
+    .select
+    {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .link
+    {
+        width: 100%;
+    }
+}
+
+/* мобильник */
+@media (max-width:575px) {
+    .MenuGame__title
+{
+    font-size: 25px;
+   
+}
 }

@@ -1,0 +1,65 @@
+.header__nav
+{
+    
+}
+
+.header__nav_list
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    /* padding-left: 15px; */
+    width: 100%;
+
+}
+
+.header__nav_item
+{
+    /* display: flex; */
+    font-size: 20px;
+    padding-left: 15px;
+    transition: color .3s linear;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.header__nav_item:hover
+{
+    color: #e99445;
+}
+
+.nav
+{
+
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+    .header__nav_list
+    {
+        /* padding-left: 10px; */
+        
+    }
+
+    .header__nav_item
+    {
+         font-size: 13px;
+    }
+}
+
+/* планшет */
+@media (max-width:990px) {
+    .header__nav_item
+    {
+        display: none;
+    }
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+}
+
+/* мобильник */
+@media (max-width:575px) {
+}

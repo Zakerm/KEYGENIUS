@@ -1,0 +1,165 @@
+
+
+.header__search
+{
+   position: relative;
+    width: 29px;
+    height: 30px;
+    background: #A9A9A9;
+    /* border-radius: 5%; */
+    transition: 0.5s;
+    box-shadow: 0 0 0 5px #6d6c6c;
+    margin-right: 10px;
+    margin-top: 5px;
+    /* overflow: hidden; */
+
+}
+
+.header__search .icon
+{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 30px;
+    width: 30px;
+    /* background: #fff; */
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.header__search .icon::before
+{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border:  3px solid black;
+    border-radius: 50%;
+    transform: translate(-2px, -2px);
+}
+
+.header__search .icon::after
+{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: black;
+    transform: translate(8px, 8px) rotate(-45deg);
+}
+
+.header__search.active{
+    width: 250px;
+}
+
+.header__search .input
+{
+    position: relative;
+    /* width: 100%; */
+    height: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 215px;
+    
+    
+}
+
+.header__search .input input
+{
+
+    position: absolute;
+    top:0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 10px 0;
+    padding-left: 5px;
+    
+    
+}
+
+.clear
+{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:  translateY(-50%);
+
+}
+
+.clear::before
+{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: black;
+    transform: rotate(45deg);
+
+}
+
+.clear::after
+{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: black;
+    transform: rotate(-45deg);
+
+}
+
+/* HeaderSearch.module.css */
+
+.suggestions {
+    position: absolute;
+    top: 100%; /* Отображение подсказок под инпутом */
+    left: 0;
+    z-index: 999; /* Чтобы подсказки были поверх других элементов */
+    background-color: #fff; /* Цвет фона подсказок */
+    border: 1px solid #ccc; /* Рамка вокруг подсказок */
+    border-radius: 5px;
+    max-height: 200px; /* Максимальная высота подсказок */
+    overflow-y: auto; /* Прокручиваемая область, если подсказки выходят за пределы */
+    width: calc(100% - 2px); /* Ширина подсказок с учетом рамки */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Тень для подсказок */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Убираем маркеры у списка */
+    width: 100%;
+    margin-top: 10px;
+    
+  }
+  
+  .suggestions li {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  .suggestions li:hover {
+    background-color: #f0f0f0; /* Цвет при наведении на подсказку */
+  }
+  
+
+  /* .card
+  {
+    display: flex;
+    flex-direction: row;
+  } */

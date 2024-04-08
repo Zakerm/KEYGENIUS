@@ -3,3 +3,28 @@
     width: 50px;
     height: 50px;
 }
+
+.filter_mode_name
+{
+    font-size: 30px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+.filter_mode
+{
+    margin: 10px 10px 10px 10px;
+    background-color: #DFDFDF;
+}
+
+.mode_content
+{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.mode_content_text
+{
+    font-size: 20px;
+}

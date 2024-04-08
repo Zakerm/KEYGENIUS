@@ -17,17 +17,21 @@ export default function Subscription() {
           <div className={styles.subscription_info}>
             Новинки, предварительные заказы, скидки и лучшие предложения!
           </div>
-          <form className="flex" onSubmit={handleSubmit}>
-            <p className={styles.subscription_text}>Рассылка</p>
+          <form className={`${styles.form} flex`} onSubmit={handleSubmit}>
+            <p className={`${styles.subscription_text} ${styles.form_wr}`}>
+              Рассылка
+            </p>
+
             <input
-              className={`${styles.subscription_input} border-2`}
+              className={`${styles.subscription_input} ${styles.form_wr} border-2`}
               type="email"
               name="email"
               // onChange={handleChange}
               placeholder="Укажите e-mail"
             />
+
             <input
-              className={styles.subscription_btn}
+              className={`${styles.subscription_btn} ${styles.form_wr}`}
               type="submit"
               value="подписаться"
             />

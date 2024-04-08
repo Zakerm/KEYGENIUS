@@ -8,10 +8,11 @@
 
 .filter_price
 {
-    margin-left: 15px;
-    margin-top: 20px;
+    /* margin-left: 15px;
+    margin-top: 20px; */
+    margin: 10px 10px 10px 10px;
     background-color: #DFDFDF;
-    width: 325px;
+    /* width: 325px; */
 }
 
 .price_from p,
@@ -19,15 +20,17 @@
 {
     padding-right: 5px;
     font-size: 20px;
+   
 }
 
 .price_title
 {
     font-size: 30px;
     text-align: center;
+    padding: 5px 0 5px 0;
 }
 
 .price_variation
 {
-
+  padding: 5px 0px 5px 5px;
 }

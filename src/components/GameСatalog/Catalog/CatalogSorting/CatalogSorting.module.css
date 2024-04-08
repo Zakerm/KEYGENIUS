@@ -1,0 +1,73 @@
+.catalog_sorting__title
+{
+    font-size: 35px;
+}
+
+.block_sorting
+{
+    display: flex;
+}
+
+.sorting
+{
+    font-size: 25px;
+}
+
+.text_sorting
+{
+ font-size: 25px;
+ margin-right: 10px;
+}
+
+select{
+    outline: none;
+    border-radius: 10px;
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+}
+
+/* планшет */
+@media (max-width:990px) {
+    .catalog_sorting__title
+    {
+        font-size: 30px;
+    }
+
+    .sorting
+    {
+    font-size: 20px;
+    }
+
+    .text_sorting
+    {
+     font-size: 20px;
+    }
+
+
+
+
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+}
+
+/* мобильник */
+@media (max-width:575px) {
+    .catalog_sorting__title
+    {
+        font-size: 25px;
+    }
+
+    .sorting
+    {
+    font-size: 15px;
+    }
+
+    .text_sorting
+    {
+     font-size: 15px;
+    }
+}

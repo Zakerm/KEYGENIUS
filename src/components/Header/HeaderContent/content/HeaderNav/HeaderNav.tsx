@@ -5,19 +5,27 @@ import styles from "./HeaderNav.module.css";
 export default function HeaderNav() {
   return (
     <div className={styles.header__nav}>
-      <nav className="w-full">
+      <nav className={styles.nav}>
         <ul className={styles.header__nav_list}>
           <li className={styles.header__nav_item}>
-            <NavLink to={`/catalog`}>Каталог игр</NavLink>
+            <NavLink to={`/catalog`}>
+              <div>Каталог игр</div>
+            </NavLink>
           </li>
           <li className={styles.header__nav_item}>
-            <NavLink to={"#"}>Поддержка</NavLink>
+            <NavLink to={"#"}>
+              <div>Поддержка</div>
+            </NavLink>
           </li>
           <li className={styles.header__nav_item}>
-            <NavLink to={"#"}>Покупки</NavLink>
+            <NavLink to={"#"}>
+              <div>Покупки</div>
+            </NavLink>
           </li>
           <li className={styles.header__nav_item}>
-            <NavLink to={"#"}>Отзывы</NavLink>
+            <NavLink to={"#"}>
+              <div>Отзывы</div>
+            </NavLink>
           </li>
         </ul>
       </nav>

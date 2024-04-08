@@ -7,7 +7,7 @@ import INetwork from "../../../../../../img/Filter/mode/network.png";
 export default function FilterMode() {
   return (
     <div className={`${styles.filter_mode}`}>
-      <div className={styles.filter_mode_name}></div>
+      <div className={styles.filter_mode_name}>Режимы игры</div>
       <div className={`${styles.mode}`}>
         <div className={`${styles.mode_content}`}>
           <img src={ISingle} className={styles.mode_content_img} alt="" />

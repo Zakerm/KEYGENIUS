@@ -1,14 +1,7 @@
-input {outline:none;}
-
-.catalog_filter
+.catalog_content_middle
 {
-    
-    /* width: 350px; */
-    background-color: #D5CFCF;
-    margin-left: 10px;
-    height: 100%;
-    width: min-content;
-    
+    display: flex;
+    flex-direction: row;
 }
 
 /* Экран ноута */
@@ -17,9 +10,10 @@ input {outline:none;}
 
 /* планшет */
 @media (max-width:990px) {
-    .catalog_filter
+    .catalog_content_middle
     {
-        display: none;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
 
@@ -30,4 +24,3 @@ input {outline:none;}
 /* мобильник */
 @media (max-width:575px) {
 }
-

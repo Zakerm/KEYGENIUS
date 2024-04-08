@@ -1,6 +1,6 @@
 .subscription_title
 {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .center
@@ -8,14 +8,21 @@
     align-items: center;
 }
 
+.form
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .subscription_info
 {
-    font-size: 48px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .subscription_text
 {
-    font-size: 48px;
+    font-size: 30px;
     padding-right: 10px;
 }
 
@@ -23,7 +30,7 @@
 {
     width: 300px;
     height: 48px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     font-size:30px;
     outline: none;
 }
@@ -35,7 +42,7 @@
     cursor: pointer;
     background-color: #F92E2E;
     height: 45px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     margin-left: 0;
     color: #fff;
     transition: background-color .2s linear;
@@ -44,4 +51,69 @@
 .subscription_btn:hover
 {
     background-color: #ce2a2a;
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+
+}
+
+/* планшет */
+@media (max-width:990px) {
+    .subscription_title
+{
+    font-size: 35px;
+}
+
+
+    .subscription_info
+    {
+        font-size: 25px;
+    }
+
+    .subscription_input
+    {
+        font-size: 25px;
+    }
+
+    .subscription_btn
+    {
+        font-size: 25px;
+    }
+
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+
+    .subscription_text
+    {
+        text-align: center;
+    }
+    .subscription_info
+    {
+        font-size: 20px;
+       
+    }
+
+    .form_wr
+    {
+        width: 100%;
+    }
+
+    .form
+    {
+        flex-direction: column;
+    }
+
+    .subscription_input
+    {
+        text-align: center;
+    }
+
+
+}
+
+/* мобильник */
+@media (max-width:575px) {
 }

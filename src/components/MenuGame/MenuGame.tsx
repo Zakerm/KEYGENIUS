@@ -3,6 +3,7 @@ import "../../css/general.css";
 import styles from "./MenuGame.module.css";
 import MenuGameSelect from "./MenuGameSelect/MenuGameSelect";
 import MenuGameCards from "./MenuGameCards/MenuGameCards";
+import { Link, NavLink } from "react-router-dom";
 
 export default function MenuGame() {
   return (
@@ -12,7 +13,7 @@ export default function MenuGame() {
           <MenuGameSelect />
           <MenuGameCards />
           <p className={styles.see_more}>
-            <a href="#!">Показать больше →</a>
+            <NavLink to={`/catalog`}>Показать больше →</NavLink>
           </p>
         </div>
       </div>

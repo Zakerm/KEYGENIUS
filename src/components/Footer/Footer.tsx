@@ -9,7 +9,11 @@ export default function Footer() {
       className={`${styles.footer} flex flex-col justify-center items-center `}
     >
       <div className={styles.footer_logo}>
-        <img className="footer_logo-img" src={FooterLogo} alt="FooterLogo" />
+        <img
+          className={styles.footer_logo_img}
+          src={FooterLogo}
+          alt="FooterLogo"
+        />
       </div>
       <div className={styles.footer_copyright}>
         <p className={styles.copyright}>© 2024 KEYGENIUS</p>
