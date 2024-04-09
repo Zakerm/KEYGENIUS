@@ -1,18 +1,17 @@
 .game_title
-
 {
-    font-size: 96px;
+    font-size: 40px;
 }
 
 .game_price_text
 {
-    font-size: 96px;
-    height: 125px;
+    font-size: 40px;
+    /* height: 125px; */
 }
 
 .game_img_img
 {
-    width: 750px;
+    /* width: 750px; */
 }
 
 .price_btn
@@ -31,7 +30,7 @@
 
 .game_price_btn
 {
-    font-size: 43px;
+    font-size: 25px;
     color: #fff;
 }
 
@@ -42,8 +41,10 @@
 
 .game_price
 {
+
     display: flex;
     margin-right: 5%;
+    justify-content: center
 }
 
 .game_about
@@ -54,21 +55,156 @@
 
 .about_text
 {
-    font-size: 48px;
-    height: 50px;
+    font-size: 25px;
+    /* height: 50px; */
     
 }
 
 .about_info
 {
-    font-size: 48px;
-    height: 50px;
+    font-size: 25px;
+    /* height: 50px; */
     padding-left: 50px;
 }
 
 .game_description
 {
     padding-top: 20px;
-    font-size: 32px;
+    font-size: 25px;
     width: 65%;
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+    .game_title
+{
+    font-size: 35px;
+}
+
+.game_price_text
+{
+    font-size: 35px;
+}
+
+.game_price_btn
+{
+    font-size: 20px;
+    color: #fff;
+}
+
+.about_text
+{
+    font-size: 20px;
+    
+}
+
+.about_info
+{
+    font-size: 20px;
+
+}
+
+.game_description
+{
+    font-size: 20px;
+}
+
+.price_btn
+{
+    background-color: #4DAE51;
+    /* width: 300px; */
+    padding: 5px 50px 5px 50px;
+    transition: background-color .2s linear;
+}
+
+}
+
+/* планшет */
+@media (max-width:990px) {
+    .price_btn
+    {
+        background-color: #4DAE51;
+        /* width: 300px; */
+        padding: 5px 50px 5px 50px;
+        transition: background-color .2s linear;
+    }
+
+    .game_img_img
+    {
+        width: 300px;
+        
+    }
+    .game_title
+    {
+        font-size: 30px;
+    }
+    
+    .game_price_text
+    {
+        font-size: 25px;
+    }
+    
+    .game_price_btn
+    {
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    .about_text
+    {
+        font-size: 17px;
+        
+    }
+    
+    .about_info
+    {
+        font-size: 17px;
+    
+    }
+    
+    .game_description
+    {
+        font-size: 17px;
+        padding-top: 5px;
+    }
+
+    
+
+
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+    .game
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .game_title
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .game_about
+    {
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .game_description
+    {
+        text-align:left;
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+/* мобильник */
+@media (max-width:575px) {
 }

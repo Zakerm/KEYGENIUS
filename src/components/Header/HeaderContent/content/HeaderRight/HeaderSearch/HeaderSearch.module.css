@@ -10,7 +10,7 @@
     transition: 0.5s;
     box-shadow: 0 0 0 5px #6d6c6c;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: -4px;
     /* overflow: hidden; */
 
 }
@@ -78,7 +78,7 @@
     position: absolute;
     top:0;
     left: 0px;
-    width: 100%;
+    width: 102%;
     height: 100%;
     border: 0;
     outline: 0;

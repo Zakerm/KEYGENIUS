@@ -9,7 +9,7 @@ export default function HeaderLogo() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className={styles.logo}>
       <NavLink to={"/"}>
         <div className={styles.header__logo}>
           <img

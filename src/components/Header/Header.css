@@ -1,8 +1,9 @@
 .header
 {
-    /* width: 100%; */
     background-color: #A9A9A9;
-    height: 80px;
+    height: 60px;
+    /* position: fixed;
+    width: 100%; */
 }
 
 /* Экран ноута */

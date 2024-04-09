@@ -1,6 +1,6 @@
 .header__nav
 {
-    
+    width: 48%;
 }
 
 .header__nav_list
@@ -16,7 +16,7 @@
 .header__nav_item
 {
     /* display: flex; */
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 15px;
     transition: color .3s linear;
     text-transform: uppercase;
@@ -39,12 +39,11 @@
     .header__nav_list
     {
         /* padding-left: 10px; */
-        
     }
 
     .header__nav_item
     {
-         font-size: 13px;
+         font-size: 14px;
     }
 }
 

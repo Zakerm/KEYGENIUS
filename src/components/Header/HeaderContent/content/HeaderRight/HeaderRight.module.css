@@ -3,17 +3,15 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width: 20%;
+    width: 30%;
 }
 
 .right
 {
     order: 999;
-    margin-left: auto;
+    margin-left: 50px;
     
 }
-
-
 
 
 .header__cabinet
@@ -24,7 +22,7 @@
 .header__cabinet_img
 {
     width: 100%;
-    height: 40px;
+    height: 30px;
     
 }
 
