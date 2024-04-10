@@ -1,0 +1,25 @@
+.contacts
+{
+    font-size: 40px;
+}
+
+.mail_tittle
+{
+    font-size: 30px;
+}
+
+.mail_link
+{
+    font-size: 20px;
+}
+
+.mail_link:hover,
+.svg:hover
+{
+    color: blue;
+}
+
+.mail
+{
+    padding-left: 10px;
+}

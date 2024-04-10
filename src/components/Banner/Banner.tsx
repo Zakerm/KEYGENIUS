@@ -4,7 +4,7 @@ import style from "./Banner.module.css";
 
 export default function Banner() {
   return (
-    <div className="w-full">
+    <div className={style.container}>
       <img className={style.ImgBanner} src={ImgBanner} alt="ImgBanner" />
     </div>
   );
