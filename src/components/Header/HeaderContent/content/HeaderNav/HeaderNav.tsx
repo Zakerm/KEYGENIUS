@@ -13,7 +13,7 @@ export default function HeaderNav() {
             </NavLink>
           </li>
           <li className={styles.header__nav_item}>
-            <NavLink to={"#"}>
+            <NavLink to={"/support"}>
               <div>Поддержка</div>
             </NavLink>
           </li>

@@ -1,5 +1,5 @@
 import React from "react";
-import { IGameInfo } from "../../../../models/GameInfoModels";
+// import { IGameInfo } from "../../../../models/GameInfoModels";
 import { IGameCards } from "../../../../models/GameCardsModels";
 import styles from "./PageInfo.module.css";
 
