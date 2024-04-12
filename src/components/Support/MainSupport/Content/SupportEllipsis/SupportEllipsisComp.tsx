@@ -13,6 +13,9 @@ export default function SupportEllipsisComp() {
       <Header />
       <div className={`${styles.main_support} flex-col`}>
         <SupportMenu />
+        <div className={styles.support_tittle}>
+          <h2>Другое</h2>
+        </div>
         <div>
           {Ellipsis.map((card) => (
             <SupportEllipsis card={card} key={card.id} />

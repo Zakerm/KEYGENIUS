@@ -12,8 +12,6 @@
   .title_card
   {
     display: flex;
-  
-
   }
 
   .arrow {
@@ -43,9 +41,7 @@
     cursor: pointer;
   }
   
-  .menu_transition {
-    
-  }
+
   
   .faq_menu {
     display: flex;

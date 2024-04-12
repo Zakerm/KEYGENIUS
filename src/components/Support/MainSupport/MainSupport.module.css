@@ -4,3 +4,10 @@
     display: flex;
     /* justify-content: center; */
 }
+
+.support_tittle
+{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}

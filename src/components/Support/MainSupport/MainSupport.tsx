@@ -11,6 +11,9 @@ export default function MainSupport() {
   return (
     <div className={`${styles.main_support} flex-col`}>
       <SupportMenu />
+      <div className={styles.support_tittle}>
+        <h2>Популярные вопросы</h2>
+      </div>
       <PopularQuestionsList />
     </div>
   );

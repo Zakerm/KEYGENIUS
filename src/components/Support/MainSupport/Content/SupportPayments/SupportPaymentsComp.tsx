@@ -15,6 +15,9 @@ export default function SupportPaymentsComp() {
       <Header />
       <div className={`${styles.main_support} flex-col`}>
         <SupportMenu />
+        <div className={styles.support_tittle}>
+          <h2>Платежи</h2>
+        </div>
         <div>
           {Payments.map((card) => (
             <SupportPayments card={card} key={card.id} />

@@ -13,6 +13,9 @@ export default function SupportProductsComp() {
       <Header />
       <div className={`${styles.main_support} flex-col`}>
         <SupportMenu />
+        <div className={styles.support_tittle}>
+          <h2>Продукты</h2>
+        </div>
         <div>
           {Products.map((card) => (
             <SupportProducts card={card} key={card.id} />
@@ -23,13 +26,3 @@ export default function SupportProductsComp() {
     </div>
   );
 }
-
-// function SupportProductsList() {
-//   return (
-//     <div>
-//       {Products.map((card) => (
-//         <SupportProducts card={card} key={card.id} />
-//       ))}
-//     </div>
-//   );
-// }

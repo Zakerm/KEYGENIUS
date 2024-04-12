@@ -14,6 +14,9 @@ export default function SupportProblemsComp() {
       <Header />
       <div className={`${styles.main_support} flex-col`}>
         <SupportMenu />
+        <div className={styles.support_tittle}>
+          <h2>Продукты</h2>
+        </div>
         <div>
           {Problems.map((card) => (
             <SupportProblems card={card} key={card.id} />
