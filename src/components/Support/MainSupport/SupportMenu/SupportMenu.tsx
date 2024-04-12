@@ -21,7 +21,7 @@ export default function SupportMenu() {
         </li>
         <li className={styles.support_tabs__item}>
           <NavLink
-            to={`/support/payment`}
+            to={`/support/payments`}
             className={styles.support_tabs__link}
           >
             <img className={styles.img_support} src={payment} alt="" />

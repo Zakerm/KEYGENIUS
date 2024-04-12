@@ -11,7 +11,7 @@ export default function CatalogFilter() {
       <div className={`${styles.filter} flex-col`}>
         <FilterPrice />
         <FilterGenre />
-        <FilterMode />
+        <FilterMode /> 
         {/* <FilterDate /> */}
       </div>
     </div>

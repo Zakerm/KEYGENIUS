@@ -3,7 +3,34 @@
     padding: 20px;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /* position: relative; */
+   
+  }
+
+  .title_card
+  {
+    display: flex;
+  
+
+  }
+
+  .arrow {
+    transform: translateY(-50%) rotate(0deg); /* По умолчанию стрелка вниз */
+    width: 0;
+    height: 0;
+    margin-top: 10px;
+    order: 999;
+    margin-left: auto;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #000; /* Измените цвет стрелки по желанию */
+    transition: transform 0.3s ease; /* Добавлено для анимации */
+  }
+  
+  .faq_container.open .arrow {
+    transform: translateY(-50%) rotate(180deg); /* Поворот стрелки при открытом состоянии */
   }
   
   .faq_button {

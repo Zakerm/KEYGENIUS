@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import styles from "./PopularQuestions.module.css";
-import { IPopularQuestions } from "../../../../../models/PopularQuestionsDate";
+import styles from "../PopularQuestions/PopularQuestions.module.css";
+import { IPayments } from "../../../../../models/PopularQuestionsDate";
 
-interface PopularQuestionsProps {
-  cards: IPopularQuestions;
+interface PaymentsProps {
+  card: IPayments;
 }
 
-export default function PopularQuestions(props: PopularQuestionsProps) {
+export default function SupportPayments(props: PaymentsProps) {
   const [isMenuOpen1, setIsMenuOpen1] = useState(false);
 
   const toggleMenu1 = () => {
@@ -20,7 +20,7 @@ export default function PopularQuestions(props: PopularQuestionsProps) {
       onClick={toggleMenu1}
     >
       <div className={styles.title_card}>
-        <h1>{props.cards.question}</h1>
+        <h1>{props.card.question}</h1>
         {/* <button className={styles.faq_button}></button> */}
         <div className={styles.arrow}></div>
       </div>
@@ -36,8 +36,8 @@ export default function PopularQuestions(props: PopularQuestionsProps) {
         unmountOnExit
       >
         <div className={styles.faq_menu}>
-          <div key={props.cards.id} className={styles.faq_item}>
-            <div className={styles.faq_answer}>{props.cards.answer}</div>
+          <div key={props.card.id} className={styles.faq_item}>
+            <div className={styles.faq_answer}>{props.card.answer}</div>
           </div>
         </div>
       </CSSTransition>
