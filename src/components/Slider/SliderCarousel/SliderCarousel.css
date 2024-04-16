@@ -1,0 +1,56 @@
+/* styles.css */
+.slider-carousel {
+  /* margin: 50px auto; */
+  padding: 50px 50px;
+  /* max-width: 1700px; */
+  /* width: 100%; */
+   /* Ширина слайдера */
+   /* display: flex; */
+   background-color: black;
+  
+   
+}
+
+
+
+/* Стили для точек пагинации (кружочков) */
+.slick-dots li button::before {
+  color: rgb(255, 255, 255); /* Изменяем цвет точек на красный */
+}
+
+
+
+/* Изменение цвета точек при наведении */
+.slick-dots li button:hover::before {
+  color: blue; /* Изменяем цвет точек при наведении на синий */
+}
+
+/* Стили для активной точки */
+.slick-dots li.slick-active button::before {
+  color: blue; /* Изменяем цвет активной точки на синий */
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+}
+
+
+
+.slide-item img
+{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

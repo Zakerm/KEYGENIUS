@@ -15,7 +15,7 @@ export default function SupportProblemsComp() {
       <div className={`${styles.main_support} flex-col`}>
         <SupportMenu />
         <div className={styles.support_tittle}>
-          <h2>Продукты</h2>
+          <h2>Проблемы</h2>
         </div>
         <div>
           {Problems.map((card) => (

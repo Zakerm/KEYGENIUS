@@ -1,0 +1,50 @@
+/* Стили для компонента FilterMode */
+
+.filter_mode_name {
+  font-size: 30px;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+.filter_mode {
+  margin: 10px;
+  background-color: #dfdfdf;
+}
+
+.mode-checkbox {
+  display: inline-block;
+  margin-right: 20px; /* Расстояние между чекбоксами */
+}
+
+.hidden-checkbox {
+  display: none; /* Скрыть настоящий чекбокс */
+}
+
+.mode-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mode
+{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+.mode-img {
+  width: 50px; /* Размер изображения */
+  height: auto; /* Автоматическая высота */
+  margin-bottom: 5px; /* Расстояние между изображением и текстом */
+}
+
+.mode-text {
+  font-size: 17px; /* Размер текста */
+  padding-left: 5px;
+}
+
+.mode-checkbox input[type="checkbox"]:checked + .mode-label .mode-img {
+  border: 2px solid red;
+  background-color: rgb(255, 136, 0);
+}

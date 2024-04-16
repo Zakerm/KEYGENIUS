@@ -6,12 +6,19 @@
     margin-bottom: 20px;
     cursor: pointer;
     /* position: relative; */
+    border-radius: 5px;
    
+  }
+
+  .faq_container:hover .title_card h1 
+  {
+    color: rgb(209, 104, 6);
   }
 
   .title_card
   {
     display: flex;
+    font-size: 23px;
   }
 
   .arrow {
@@ -59,13 +66,10 @@
     margin-bottom: 10px;
   }
   
-  .faq_question {
-    font-size: 18px;
-    font-weight: bold;
-  }
+  
   
   .faq_answer {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .menu_enter {
@@ -89,4 +93,32 @@
     transform: translateY(-100%);
     transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   }
+
+  /* Экран ноута */
+@media (max-width:1230px) {
+  .title_card
+  {
+    display: flex;
+    font-size: 18px;
+  }
+
+  .faq_answer
+  {
+    font-size: 18px;
+  }
+
+
+}
+
+/* планшет */
+@media (max-width:990px) {
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+}
+
+/* мобильник */
+@media (max-width:575px) {
+}
   

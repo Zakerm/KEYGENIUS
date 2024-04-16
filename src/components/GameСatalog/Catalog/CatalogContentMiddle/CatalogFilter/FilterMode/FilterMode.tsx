@@ -1,25 +1,47 @@
 import React from "react";
-import styles from "./FilterMode.module.css";
-import ISingle from "../../../../../../img/Filter/mode/single.png";
-import IСooperative from "../../../../../../img/Filter/mode/cooperative.png";
-import INetwork from "../../../../../../img/Filter/mode/network.png";
+import ISingle from "../../../../../../img/Filter/mode/svg/single.svg";
+import IСooperative from "../../../../../../img/Filter/mode/svg/cooperative.svg";
+import INetwork from "../../../../../../img/Filter/mode/svg/network.svg";
+import "./FilterMode.css"; // Подключаем CSS-стили для компонента
 
 export default function FilterMode() {
   return (
-    <div className={`${styles.filter_mode}`}>
-      <div className={styles.filter_mode_name}>Режимы игры</div>
-      <div className={`${styles.mode}`}>
-        <div className={`${styles.mode_content}`}>
-          <img src={ISingle} className={styles.mode_content_img} alt="" />
-          <p className={styles.mode_content_text}>Одиночная</p>
+    <div className="filter_mode">
+      <div className="filter_mode_name">Режимы игры</div>
+      <div className="mode">
+        {/* Один из вариантов реализации */}
+        <div className="mode-checkbox">
+          <input type="checkbox" id="single-mode" className="hidden-checkbox" />
+          <label htmlFor="single-mode" className="mode-label">
+            <img src={ISingle} className="mode-img" alt="" />
+            <p className="mode-text">Одиночная</p>
+          </label>
         </div>
-        <div className={`${styles.mode_content}`}>
-          <img src={IСooperative} className={styles.mode_content_img} alt="" />
-          <p className={styles.mode_content_text}>Кооператив</p>
+
+        {/* Другой вариант реализации */}
+        <div className="mode-checkbox">
+          <input
+            type="checkbox"
+            id="cooperative-mode"
+            className="hidden-checkbox"
+          />
+          <label htmlFor="cooperative-mode" className="mode-label">
+            <img src={IСooperative} className="mode-img" alt="" />
+            <p className="mode-text">Кооператив</p>
+          </label>
         </div>
-        <div className={`${styles.mode_content}`}>
-          <img src={INetwork} className={styles.mode_content_img} alt="" />
-          <p className={styles.mode_content_text}>Сетевая</p>
+
+        {/* Ещё один вариант реализации */}
+        <div className="mode-checkbox">
+          <input
+            type="checkbox"
+            id="network-mode"
+            className="hidden-checkbox"
+          />
+          <label htmlFor="network-mode" className="mode-label">
+            <img src={INetwork} className="mode-img" alt="" />
+            <p className="mode-text">Сетевая</p>
+          </label>
         </div>
       </div>
     </div>

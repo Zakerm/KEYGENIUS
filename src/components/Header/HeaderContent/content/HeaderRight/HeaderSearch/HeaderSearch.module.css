@@ -163,3 +163,11 @@
     display: flex;
     flex-direction: row;
   } */
+
+  /* планшет портрет */
+@media (max-width:770px) {
+    .header__search
+    {
+        display: none;
+    }
+}

@@ -1,9 +1,10 @@
 .container_fluid {
-    max-width: 1700px;
+    /* max-width: 1700px; */
     padding-left: 24px;
     padding-right: 24px;
     /* display: flex; */
     margin: 0 auto;
+    margin-top: 25px;
 }
 
 .support_tabs__list
@@ -20,11 +21,37 @@
     /* justify-content: space-between; */
     padding: 35px 0;
     width: 100%;
+    
 }
 
 .support_tabs__item
 {
     margin-right: 3%;
+    font-family: Play, Arial, sans-serif;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 220px;
+    height: 90px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    /* padding-left: 20px; */
+    font-size: 18px;
+    color: #0a0a0a;
+    border-radius: 10%;
+   
+}
+
+.support_tabs__link:hover,
+.img_support svg:hover
+{
+    color: rgb(209, 104, 6);
+    /* background-color: red; */
+    
 }
 
 .img_support
@@ -34,24 +61,68 @@
 }
 
 .support_tabs__link {
-    font-family: Play, Arial, sans-serif;
-    font-weight: 700;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    width: 275px;
-    height: 90px;
+    flex-direction: row;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #fff;
-    padding-left: 20px;
-    font-size: 18px;
-    color: #0a0a0a;
-    border-radius: 10%;
+    
 }
 
 .support_tabs__title {
-    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+    .support_tabs__item
+    {
+        width: 200px;
+        height: 70px;
+       
+    }
+
+    .img_support
+    {
+    width: 70px;
+    height: 40px;
+    }
+
+    .container_fluid {
+        
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0;
+       
+    }
+
+    .support_tabs__list
+    {
+        justify-content: center;
+    }
+
+}
+
+/* планшет */
+@media (max-width:990px) {
+    .support_tabs__item
+    {
+        margin-top: 10px;
+    }
+
+    .support_tabs__list
+    {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+}
+
+/* мобильник */
+@media (max-width:575px) {
 }

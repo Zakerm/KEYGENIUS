@@ -7,7 +7,34 @@
 
 .support_tittle
 {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+}
+
+/* планшет */
+@media (max-width:990px) {
+    .support_tittle
+{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+
+    .support_tittle
+    {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+}
+
+/* мобильник */
+@media (max-width:575px) {
 }

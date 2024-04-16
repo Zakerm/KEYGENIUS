@@ -29,10 +29,11 @@
     color: #e99445;
 }
 
-.nav
+.header__nav_button
 {
-
+    display: none;
 }
+
 
 /* Экран ноута */
 @media (max-width:1230px) {
@@ -51,12 +52,72 @@
 @media (max-width:990px) {
     .header__nav_item
     {
-        display: none;
+        /* display: none; */
     }
+
+
+
+
 }
 
 /* планшет портрет */
 @media (max-width:770px) {
+    .nav{
+        position: fixed;
+        top: 0;
+        left: -255px;
+        display: flex;
+        width: 220px;
+        height: 100%;
+        background-color: #fff;
+        border: 2px solid black;
+        border-bottom-right-radius: 16px;
+        border-top-right-radius: 16px;
+        box-shadow: 0 0 4px 4px rgba(0,0,0,0.25);
+        transition: transform 0.3s linear;
+    }
+
+    .nav.active
+    {
+        transform:  translateX(100%);
+    }
+
+    .header__nav_list
+    {
+       display: flex;
+       flex-direction: column;
+       flex: 1;
+       padding-top: 40px;
+       padding-left: 30px;
+    }
+
+    .header__nav_item
+    {
+        margin: 10px 0;
+        font-weight: 500px;
+    }
+
+    .header__nav_button
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    
+
+}
+
+
+
+   
+
+
 }
 
 /* мобильник */
