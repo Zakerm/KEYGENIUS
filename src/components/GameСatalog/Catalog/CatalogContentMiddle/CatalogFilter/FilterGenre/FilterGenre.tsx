@@ -17,7 +17,7 @@ export default function FilterGenre() {
             <span className={styles.filter_genre__label}>Экшены</span>
           </label>
         </div>
-        {/* action */}
+
         <div className={styles.filter__unit}>
           <label className="filter__checkbox">
             <input
@@ -26,10 +26,10 @@ export default function FilterGenre() {
               id="mlt-race"
               data-data="race"
             />
-            <span className={styles.filter_genre__label}>Гонки</span>
+            <span className={styles.filter_genre__label}>Инди</span>
           </label>
         </div>
-        {/* race */}
+
         <div className={styles.filter__unit}>
           <label className="filter__checkbox">
             <input
@@ -41,7 +41,7 @@ export default function FilterGenre() {
             <span className={styles.filter_genre__label}>Гонки</span>
           </label>
         </div>
-        {/* strategies */}
+
         <div className={styles.filter__unit}>
           <label className="filter__checkbox">
             <input
@@ -53,7 +53,7 @@ export default function FilterGenre() {
             <span className={styles.filter_genre__label}>RPG</span>
           </label>
         </div>
-        {/* RPG */}
+
         <div className={styles.filter__unit}>
           <label className="filter__checkbox">
             <input
@@ -65,7 +65,7 @@ export default function FilterGenre() {
             <span className={styles.filter_genre__label}>Симуляторы</span>
           </label>
         </div>
-        {/* simulator */}
+
         <div className={styles.filter__unit}>
           <label className="filter__checkbox">
             <input
@@ -77,7 +77,7 @@ export default function FilterGenre() {
             <span className={styles.filter_genre__label}>Приключения</span>
           </label>
         </div>
-        {/* adventures */}
+
         <div className={styles.filter__unit}>
           <label className="filter__checkbox">
             <input
@@ -89,7 +89,7 @@ export default function FilterGenre() {
             <span className={styles.filter_genre__label}>Спорт</span>
           </label>
         </div>
-        {/* sport */}
+
         <div className={styles.filter__unit}>
           <label className="filter__checkbox">
             <input

@@ -9,4 +9,9 @@ export interface IGameCards{
     language?: string
     availability?: string
     description?: string
+    filter?: {
+        mode?: string[],
+        genre?: string[]
+    }
+    
 }
