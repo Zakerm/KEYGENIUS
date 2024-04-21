@@ -11,16 +11,22 @@
   background-color: #dfdfdf;
 }
 
-.mode-checkbox {
+.active
+{
+    color: #c98240;
+    
+}
+
+.mode_checkbox {
   display: inline-block;
   margin-right: 20px; /* Расстояние между чекбоксами */
 }
 
-.hidden-checkbox {
+.hidden_checkbox {
   display: none; /* Скрыть настоящий чекбокс */
 }
 
-.mode-label {
+.mode_label {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -33,18 +39,25 @@
   padding-left: 5px;
 }
 
-.mode-img {
+.mode_img {
   width: 50px; /* Размер изображения */
   height: auto; /* Автоматическая высота */
   margin-bottom: 5px; /* Расстояние между изображением и текстом */
 }
 
-.mode-text {
+.mode_text {
   font-size: 17px; /* Размер текста */
   padding-left: 5px;
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  
 }
 
-.mode-checkbox input[type="checkbox"]:checked + .mode-label .mode-img {
+.mode_checkbox input[type="checkbox"]:checked + .mode_label .mode_img {
   border: 2px solid red;
   background-color: rgb(255, 136, 0);
 }
