@@ -1,12 +1,26 @@
 .subscription_title
 {
     font-size: 40px;
+    text-align: center;
+}
+
+.sub
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr
+{
+    border: 2px solid red;
 }
 
 .center
 {
-    /* align-items: center; */
-    justify-content: space-around
+    align-items: center;
+    /* justify-content: space-around */
 }
 
 .form
@@ -23,6 +37,7 @@
 
 .subscription_text
 {
+    
     font-size: 30px;
     padding-right: 10px;
 }
@@ -55,10 +70,6 @@
 }
 
 
-
-
-
-
 /* Экран ноута */
 @media (max-width:1230px) {
 
@@ -68,6 +79,7 @@
 @media (max-width:990px) {
     .subscription_title
 {
+    text-align: center;
     font-size: 35px;
 }
 
@@ -92,9 +104,16 @@
 /* планшет портрет */
 @media (max-width:770px) {
 
+    .subscription_title
+    {
+       
+         font-size: 30px;
+    }
+
     .subscription_text
     {
-        text-align: center;
+        
+        font-size: 30px;
     }
     .subscription_info
     {

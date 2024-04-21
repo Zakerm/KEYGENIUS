@@ -4,6 +4,14 @@
     flex-direction: row;
 }
 
+.catalog_cards
+{
+    width: 60%;
+}
+
+
+
+
 /* Экран ноута */
 @media (max-width:1230px) {
 }

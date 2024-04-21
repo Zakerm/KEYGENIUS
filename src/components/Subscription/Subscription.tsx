@@ -13,9 +13,9 @@ export default function Subscription() {
     <div className="section">
       <div className="container">
         <div
-          className={`${styles.center} ${styles.subscription}  w-full flex flex-row`}
+          className={`${styles.center} ${styles.subscription}   flex flex-col `}
         >
-          <div>
+          <div className={styles.sub}>
             <div className={styles.subscription_title}>Подпишись!</div>
             <div className={styles.subscription_info}>
               Новинки, предварительные заказы, скидки и лучшие предложения!
@@ -40,6 +40,7 @@ export default function Subscription() {
               />
             </form>
           </div>
+          {/* <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" /> */}
           <SubscriptionContacts />
         </div>
       </div>

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function SubscriptionContacts() {
   return (
-    <div>
+    <div className={styles.subs_cont}>
       <div className={styles.contacts}>Контакты</div>
       <div className={styles.contacts_content}>
         <div className={styles.mail_tittle}>

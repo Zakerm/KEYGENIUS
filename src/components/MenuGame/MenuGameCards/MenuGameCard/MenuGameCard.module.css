@@ -1,13 +1,24 @@
 .MenuGame_card
 {
-    width: 100%; 
+    width: 100%;
+    
+}
+
+.MenuGame_card:hover
+{
+   
+    box-shadow: 20px -5px 10px 5px rgba(0, 0, 0, .5);
+    
+        
+    
 }
 
 .MenuGame_card_link{
     /* height: 270px; */
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 30px;
+    
     
 }
 
@@ -37,6 +48,8 @@
 {
     font-size: 25px;
 }
+
+
 
 /* Экран ноута */
 @media (max-width:1230px) {

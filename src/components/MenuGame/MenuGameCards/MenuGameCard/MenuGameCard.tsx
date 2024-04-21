@@ -9,9 +9,12 @@ interface GameCardProps {
 
 export default function MenuGameCard(props: GameCardProps) {
   return (
-    <Link className={styles.MenuGame_card_link} to={`/game/${props.card.id}`}>
+    <Link
+      className={`${styles.MenuGame_card_link} `}
+      to={`/game/${props.card.id}`}
+    >
       <div
-        className={`${styles.MenuGame_card} bg-white flex flex-col shadow-2xl`}
+        className={`${styles.MenuGame_card} ${styles.catalog_item} bg-white flex flex-col `}
       >
         <div className={styles.MenuGame_card_img}>
           <img

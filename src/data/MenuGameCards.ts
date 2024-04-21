@@ -68,7 +68,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "НОВЫЙ ФЭНТЕЗИЙНЫЙ РОЛЕВОЙ БОЕВИК. Восстань, погасшая душа! Междуземье ждёт своего повелителя. Пусть благодать приведёт тебя к Кольцу Элден.",
         filter:{
-            mode: ['singleplayer', 'multiplayer'],
+            mode: ['singleplayer', 'cooperative'],
             genre: ["action", "adventures", "RPG"]
         }
         
@@ -166,7 +166,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "В F.E.A.R. 3 вы найдете все качества, присущие серии F.E.A.R.: ужасающие паранормальные события, жаркие битвы и драматичный сюжет.",
         filter:{
-            mode: ['singleplayer', 'multiplayer'],
+            mode: ['singleplayer', 'cooperative'],
             genre: ["action"]
         }
         

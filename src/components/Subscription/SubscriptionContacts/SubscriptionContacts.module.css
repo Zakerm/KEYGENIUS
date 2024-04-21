@@ -1,6 +1,17 @@
+
+.subs_cont
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+    justify-content: center;
+    flex-direction: column;
+}
+
 .contacts
 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .mail_tittle
@@ -22,4 +33,24 @@
 .mail
 {
     padding-left: 10px;
+}
+
+/* Экран ноута */
+@media (max-width:1230px) {
+    .contacts
+{
+    font-size: 30px;
+}
+}
+
+/* планшет */
+@media (max-width:990px) {
+}
+
+/* планшет портрет */
+@media (max-width:770px) {
+}
+
+/* мобильник */
+@media (max-width:575px) {
 }
