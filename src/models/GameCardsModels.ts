@@ -1,4 +1,5 @@
 export interface IGameCards{
+    [x: string]: any
     id: number
     image: string
     title?:string
@@ -12,6 +13,8 @@ export interface IGameCards{
     filter?: {
         mode?: string[],
         genre?: string[]
+        release?: number
+        rating?:number
     }
     
 }

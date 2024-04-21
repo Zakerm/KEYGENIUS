@@ -17,7 +17,9 @@ export const GameCards: IGameCards[] =[
         currency: "₽",
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures"]
+            genre: ["action", "adventures"],
+            release: 2021,
+            rating: 8
         }
        
 
@@ -36,7 +38,9 @@ export const GameCards: IGameCards[] =[
         description: "Уникальный психологический экшен-триллер Beyond: Two Souls с участием голливудских суперзвезд Эллен Пейдж и Виллема Дефо уносит вас в увлекательное путешествие по всему миру, в котором вы проживете часть удивительной жизни Джоди Холмс",
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures"]
+            genre: ["action", "adventures"],
+            release: 2020,
+            rating: 7
         }
     },
     {
@@ -52,7 +56,9 @@ export const GameCards: IGameCards[] =[
         description: "Dark Souls продолжит испытывать игроков на прочность в новой главе знаменитой серии, собравшей множество наград и определившей лицо жанра. Соберитесь с духом и погрузитесь во тьму!",
         filter:{
             mode: ["singleplayer"],
-            genre: ["action"]
+            genre: ["action"],
+            release: 2010,
+            rating: 8
         }
         
     },
@@ -69,7 +75,9 @@ export const GameCards: IGameCards[] =[
         description: "НОВЫЙ ФЭНТЕЗИЙНЫЙ РОЛЕВОЙ БОЕВИК. Восстань, погасшая душа! Междуземье ждёт своего повелителя. Пусть благодать приведёт тебя к Кольцу Элден.",
         filter:{
             mode: ['singleplayer', 'cooperative'],
-            genre: ["action", "adventures", "RPG"]
+            genre: ["action", "adventures", "RPG"],
+            release: 2000,
+            rating: 10
         }
         
     },
@@ -86,7 +94,9 @@ export const GameCards: IGameCards[] =[
         description: "Столкнитесь лицом к лицу с опасностями в Олимпийской зоне отчуждения, где машина — ваш единственный шанс на спасение в этом приключении на выживание! Собирайте ресурсы, грузите их в свой универсал и давите на газ, чтобы выжить.",
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures", "indie", "race"]
+            genre: ["action", "adventures", "indie", "race"],
+            release: 2005,
+            rating: 3
         }
     },
     {
@@ -102,7 +112,9 @@ export const GameCards: IGameCards[] =[
         description: "Антология The Dark Pictures — цикл нелинейных киноигр в жанре хоррор с поддержкой игры вдвоём по сети. В Man of Medan пятеро друзей отправились на дайвинг, но шторм превратил их поездку в настоящий кошмар.",
         filter:{
             mode: ['singleplayer', 'network'],
-            genre: ["adventures"]
+            genre: ["adventures"],
+            release: 2011,
+            rating: 5
         }
         
     },
@@ -119,7 +131,9 @@ export const GameCards: IGameCards[] =[
         description: "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures", "rpg"]
+            genre: ["action", "adventures", "rpg"],
+            release: 2018,
+            rating: 7
         }
     },
     {
@@ -135,7 +149,9 @@ export const GameCards: IGameCards[] =[
         description: "Kingdom Come: Deliverance – это захватывающая РПГ с открытым миром, которая перенесёт вас в эпическое приключение в Священную Римскую империю. Отомстите за смерть ваших родителей, сражаясь с силами вторжения, выполняйте квесты, изменяйте мир своими решениями.",
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures", "rpg"]
+            genre: ["action", "adventures", "rpg"],
+            release: 2023,
+            rating: 6
         }
     },
     {
@@ -151,7 +167,9 @@ export const GameCards: IGameCards[] =[
         description: "Возглавьте сопротивление превосходящим военным силам в партизанской войне в открытом динамичном мире Homefront®: The Revolution и разожгите революцию, а угнетенные поднимутся на борьбу с оккупантами.",
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures"]
+            genre: ["action", "adventures"],
+            release: 2016,
+            rating: 8
         }
     },
     {
@@ -167,7 +185,9 @@ export const GameCards: IGameCards[] =[
         description: "В F.E.A.R. 3 вы найдете все качества, присущие серии F.E.A.R.: ужасающие паранормальные события, жаркие битвы и драматичный сюжет.",
         filter:{
             mode: ['singleplayer', 'cooperative'],
-            genre: ["action"]
+            genre: ["action"],
+            release: 2009,
+            rating: 2
         }
         
     }

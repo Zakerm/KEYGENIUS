@@ -1,7 +1,16 @@
 import React from "react";
 import styles from "./CatalogSorting.module.css";
 
-export default function CatalogSorting() {
+interface CatalogSortingProps {
+  onSortChange: (value: string) => void;
+}
+
+const CatalogSorting: React.FC<CatalogSortingProps> = ({ onSortChange }) => {
+  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    onSortChange(value);
+  };
+
   return (
     <div className="catalog_sorting">
       <div className={styles.catalog_sorting__title}>
@@ -10,15 +19,17 @@ export default function CatalogSorting() {
       <div className={styles.block_sorting}>
         <div className={styles.text_sorting}>Сортировать по</div>
         <div className={styles.sorting}>
-          <select>
-            <option value="option1">Популярности</option>
-            <option value="option2">Дата выхода,новые</option>
-            <option value="option3">Дата выхода,старые</option>
-            <option value="option4">Цене, дешевые</option>
-            <option value="option5">Цене, дорогие</option>
+          <select onChange={handleSortChange}>
+            <option value="popularity">Популярности</option>
+            <option value="dateNew">Дата выхода, новые</option>
+            <option value="dateOld">Дата выхода, старые</option>
+            <option value="priceLow">Цене, дешевые</option>
+            <option value="priceHigh">Цене, дорогие</option>
           </select>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default CatalogSorting;

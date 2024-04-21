@@ -11,12 +11,13 @@ interface CatalogFilterProps {
 
 const CatalogFilter: React.FC<CatalogFilterProps> = ({ onFilterChange }) => {
   const [resetFilters, setResetFilters] = useState(false);
+
   const handleResetFilters = () => {
-    setResetFilters(true); // Установка флага сброса
+    setResetFilters(true);
     setTimeout(() => {
-      setResetFilters(false); // Сброс флага сброса через setTimeout
-      onFilterChange("priceFrom", 0); // Сброс цены
-      onFilterChange("priceTo", 5000); // Сброс цены
+      setResetFilters(false);
+      onFilterChange("priceFrom", 0);
+      onFilterChange("priceTo", 5000);
     }, 0);
   };
 

@@ -8,7 +8,6 @@ export default function Catalog() {
     <section className="section">
       <div className="container">
         <div className={`${styles.catalog} flex flex-col`}>
-          <CatalogSorting />
           <CatalogContentMiddle />
         </div>
       </div>

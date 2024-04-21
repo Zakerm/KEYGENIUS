@@ -1,7 +1,7 @@
 .catalog_content_middle
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .catalog_cards
@@ -9,6 +9,10 @@
     width: 60%;
 }
 
+.comp
+{
+    margin-bottom: 20px;
+}
 
 
 

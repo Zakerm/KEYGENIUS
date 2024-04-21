@@ -11,7 +11,15 @@
 .sorting
 {
     font-size: 25px;
+   
 }
+
+select
+{
+    cursor: pointer;
+}
+
+
 
 .text_sorting
 {
