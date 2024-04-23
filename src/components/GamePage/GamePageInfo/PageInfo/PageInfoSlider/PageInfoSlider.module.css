@@ -1,0 +1,101 @@
+/* PageInfoSlider.module.css */
+
+/* Контейнер слайдера */
+.sliderContainer {
+    position: relative;
+  }
+  
+  /* Обертка для каждого элемента слайдера */
+  .sliderImageWrapper {
+    cursor: pointer;
+    padding: 0 5px; /* Добавляем отступы внутри каждого элемента слайдера */
+  }
+  
+  /* Контейнер слайдера */
+  .sliderContainer {
+    margin: 0 -5px; /* Добавляем отрицательные отступы справа и слева для контейнера слайдера */
+    width: 100%;
+  }
+  
+  /* Стили для изображений в слайдере */
+  .sliderImage {
+    width: 100%;
+    height: 200px; /* Высота изображения */
+  }
+  
+  /* Модальное окно и его фон */
+  .modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Цвет фона с прозрачностью */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Содержимое модального окна */
+  .modalContent {
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease forwards; /* Анимация появления модального окна */
+  }
+  
+  /* Кнопка закрытия модального окна */
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px; /* Увеличиваем размер шрифта для крестика */
+    cursor: pointer;
+    color: #fff;
+    z-index: 10001;
+  }
+  
+  .closeButton::before {
+    content: "✖️"; /* Символ крестика */
+  }
+  
+  /* Увеличенное изображение в модальном окне */
+  .enlargedImg {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Устанавливаем масштабирование содержимого */
+    transition: transform 0.3s ease; /* Плавная анимация изменения размера */
+  }
+
+  
+  
+  /* Анимация для появления модального окна */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Дополнительные стили для улучшения интерактивности */
+  /* Увеличение изображения при наведении */
+  /* .enlargedImg:hover {
+    transform: scale(1.1);
+  } */
+
+  
+
+  
