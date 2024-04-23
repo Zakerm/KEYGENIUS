@@ -13,7 +13,8 @@ export interface IGameCards{
     bgImage?: any
     filter?: {
         mode?: string[],
-        genre?: string[]
+        genre?: string[] | any,
+        genreRU?: string[] | any
         release?: number
         rating?:number
     }

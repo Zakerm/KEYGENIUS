@@ -31,6 +31,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgDaysGone,
         filter:{
             mode: ["singleplayer"],
+            genreRU: ["Экшен", "Приключения"],
             genre: ["action", "adventures"],
             release: 2021,
             rating: 8
@@ -63,6 +64,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgBeyondTwoSouls,
         filter:{
             mode: ["singleplayer"],
+            genreRU: ["Экшен", "Приключения"],
             genre: ["action", "adventures"],
             release: 2020,
             rating: 7
@@ -91,6 +93,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgDARKSOULSIII,
         filter:{
             mode: ["singleplayer"],
+            genreRU: ["Экшен"],
             genre: ["action"],
             release: 2010,
             rating: 8
@@ -119,6 +122,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgELDENRING,
         filter:{
             mode: ['singleplayer', 'cooperative'],
+            genreRU: ["Экшен", "Приключения", "RPG"],
             genre: ["action", "adventures", "RPG"],
             release: 2000,
             rating: 10
@@ -148,6 +152,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgPacificDrive,
         filter:{
             mode: ["singleplayer"],
+            genreRU: ["Экшен", "Приключения", "Инди", "Гонки"],
             genre: ["action", "adventures", "indie", "race"],
             release: 2005,
             rating: 3
@@ -176,6 +181,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgTheDarkPicturesAnthologyManofMedan,
         filter:{
             mode: ['singleplayer', 'network'],
+            genreRU: ["Приключения"],
             genre: ["adventures"],
             release: 2011,
             rating: 5
@@ -205,7 +211,8 @@ export const GameCards: IGameCards[] =[
         bgImage: BgTheWitcher3WildHunt,
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures", "rpg"],
+            genreRU: ["Экшен", "Приключения", "RPG"],
+            genre: ["action", "adventures", "RPG"],
             release: 2018,
             rating: 7
         },
@@ -233,7 +240,8 @@ export const GameCards: IGameCards[] =[
         bgImage: BgKingdomComeDeliverancefrom,
         filter:{
             mode: ["singleplayer"],
-            genre: ["action", "adventures", "rpg"],
+            genreRU: ["Экшен", "Приключения", "RPG"],
+            genre: ["action", "adventures", "RPG"],
             release: 2023,
             rating: 6
         },
@@ -261,6 +269,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgHomefrontTheRevolution,
         filter:{
             mode: ["singleplayer"],
+            genreRU: ["Экшен", "Приключения"],
             genre: ["action", "adventures"],
             release: 2016,
             rating: 8
@@ -289,6 +298,7 @@ export const GameCards: IGameCards[] =[
         bgImage: BgFEAR3,
         filter:{
             mode: ['singleplayer', 'cooperative'],
+            genreRU: ["Экшен"],
             genre: ["action"],
             release: 2009,
             rating: 2

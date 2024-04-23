@@ -8,6 +8,9 @@ interface CatalogCardProps {
 }
 
 export default function CatalogCard(props: CatalogCardProps) {
+  const genres = props.card.filter?.genreRU
+    ? props.card.filter.genreRU.join(",")
+    : "";
   return (
     <Link to={`/game/${props.card.id}`}>
       <div className={`${styles.catalog_card} flex flex-row`}>
@@ -31,7 +34,7 @@ export default function CatalogCard(props: CatalogCardProps) {
               />
             </div>
             <div className={styles.card_game_genre}>
-              <p>Экшен</p>
+              <p>{genres}</p>
             </div>
           </div>
         </div>
