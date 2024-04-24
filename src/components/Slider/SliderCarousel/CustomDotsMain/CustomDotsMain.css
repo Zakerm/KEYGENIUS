@@ -1,0 +1,29 @@
+/* CustomDotsMain.css */
+
+/* Стили для отдельной точки */
+.custom-dot {
+    display: inline-block;
+    width: 15px; /* Измените размер точек по вашему усмотрению */
+    height: 15px; /* Измените размер точек по вашему усмотрению */
+    background-color: white; /* Цвет точек */
+    border-radius: 50%; /* Делаем точки круглыми */
+    margin: 0 5px; /* Расстояние между точками */
+    cursor: pointer;
+  }
+  
+  .custom-dot .dot {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .active  {
+    background-color: #00bfff; /* Голубой цвет для активной точки */
+  }
+
+  
+
+
+  
+  

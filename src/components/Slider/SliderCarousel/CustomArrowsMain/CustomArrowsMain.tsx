@@ -1,8 +1,8 @@
 // CustomArrows.tsx
 import React from "react";
-import styles from "./CustomArrows.module.css";
-import ArrowLeft from "../../../../../../img/Slider/arrow-left.png";
-import ArrowRight from "../../../../../../img/Slider/arrow-right.png";
+import styles from "./CustomArrowsMain.module.css";
+import ArrowLeft from "../../../../img/Slider/arrow-left.png";
+import ArrowRight from "../../../../img/Slider/arrow-right.png";
 
 // Компонент для кастомной стрелки "назад"
 const SamplePrevArrow: React.FC<{

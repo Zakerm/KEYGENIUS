@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import styles from "./PageInfoSlider.module.css";
 import { SampleNextArrow, SamplePrevArrow } from "./CustomArrows/CustomArrows";
 
@@ -34,16 +34,22 @@ export default function PageInfoSlider(props: PageInfoSliderProps) {
   const settings = {
     dots: false,
     infinite: true,
-    prevArrow: <SamplePrevArrow className="prev-arrow" onClick={() => {}} />, // Указываем компонент для кастомной стрелки "назад"
-    nextArrow: <SampleNextArrow className="next-arrow" onClick={() => {}} />, // Указываем компонент для кастомной стрелки "вперед"
+
+    // prevArrow: <SamplePrevArrow className="prev-arrow" onClick={() => {}} />, // Указываем компонент для кастомной стрелки "назад"
+    //nextArrow: <SampleNextArrow className="next-arrow" onClick={() => {}} />, // Указываем компонент для кастомной стрелки "вперед"
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
   };
 
+  const customArrows = {
+    prevArrow: <SamplePrevArrow className="" onClick={() => {}} />,
+    nextArrow: <SampleNextArrow className="" onClick={() => {}} />,
+  };
+
   return (
     <div className={styles.sliderContainer}>
-      <Slider {...settings}>
+      <Slider {...settings} {...customArrows}>
         {props.sliderImages.map((image, index) => (
           <div
             key={index}

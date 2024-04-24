@@ -1,0 +1,44 @@
+.customPrevArrow,
+.customNextArrow {
+  color: #cfc7c7;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 60px; /* Уменьшенный размер шрифта */
+  top: 40%;
+  text-align: center; /* Центрирование текста внутри стрелки */
+  line-height: 50px; /* Выравнивание текста по вертикали */
+  display: inline-block; /* Уменьшение области клика до размеров содержимого */
+  box-sizing: border-box; /* Учет padding внутри размеров элемента */
+  
+ 
+  
+}
+
+.customPrevArrow {
+  left: -55px;
+}
+
+.customNextArrow {
+  right: -55px;
+  
+}
+
+.customPrevArrow:hover,
+.customNextArrow:hover {
+  color: #f7f4f4;
+}
+
+.customPrevArrow img, .customNextArrow img{
+   width: 50px;
+}
+
+.customPrevArrow img:hover, .customNextArrow img:hover{
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+ 
+  
+}
+
+
