@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { IGameInfo } from "../../../../models/GameInfoModels";
 import { IGameCards } from "../../../../models/GameCardsModels";
 import styles from "./PageInfo.module.css";
@@ -9,6 +9,9 @@ interface GameInfo {
 }
 
 export default function PageInfo(props: GameInfo) {
+  useEffect(() => {
+    document.title = `Купить ${props.info.title}`;
+  }, [props.info.title]);
   const bgStyle: React.CSSProperties = {
     background: `linear-gradient(rgba(255, 255, 255, 0.8), rgb(103 96 96 / 50%)),  url(${props.info.bgImage} ) no-repeat   `,
     backgroundSize: `cover`,

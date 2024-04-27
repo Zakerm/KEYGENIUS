@@ -9,12 +9,10 @@ import BgTheWitcher3WildHunt from "../img/Bg/TheWitcher3WildHunt/TheWitcher3Wild
 import BgKingdomComeDeliverancefrom from "../img/Bg/KingdomComeDeliverance/KingdomComeDeliverance.jpg"
 import BgHomefrontTheRevolution from "../img/Bg/HomefrontTheRevolution/HomefrontTheRevolution.jpg"
 import BgFEAR3 from "../img/Bg/F.E.A.R.3/F.E.A.R.3.jpg"
-
-
-
-
-
-
+import BgEvilWest from "../img/Bg/EvilWest/EvilWestMain.jpg"
+import BgWHISKERWATERS from "../img/Bg/WHISKERWATERS/WHISKERWATERS.jpg"
+import BgDiRTRally from "../img/Bg/DiRTRally/DiRTRally.jpg"
+import BgTabletopSimulator from "../img/Bg/TabletopSimulator/TabletopSimulator.jpg"
 
 export const GameCards: IGameCards[] =[
     {
@@ -46,9 +44,6 @@ export const GameCards: IGameCards[] =[
             DirectX: "Версии 11",
         },
 
-       
-
-  
     },
     {
         id: 2,
@@ -312,6 +307,142 @@ export const GameCards: IGameCards[] =[
             videocard: "с 512 МБ видеопамяти (NVIDIA 8800 GT, ATI 3850HD) или лучше",
             DirectX: "9.0c",
         },
+        
+    },
+    {
+        id: 11,
+        image: "https://steammachine.ru/slider/4135345-462x264.webp",
+        platform: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png",
+        price: 2300,
+        currency: "₽",
+        region: "Россия",
+        language: "Русский",
+        title: "Evil West",
+        availability: "В наличии",
+        description: "Зловещая угроза нависла над Диким Западом. В одиночку или сообща сражайтесь с кровожадными чудищами в беспощадных, взрывных боях и покажите всем, как это делается. Искореняйте полчища вампиров заправленной молнией рукавицей и станьте супергероем Дикого Запада.",
+        bgImage: BgEvilWest,
+        filter:{
+            mode: ['singleplayer', 'cooperative', 'network'],
+            genreRU: ["Приключения"],
+            genre: ["adventures"],
+            release: 2022,
+            rating: 9
+        },
+        trailer: "https://www.youtube.com/embed/5ERcyYnqU9M?si=4liWuiEhqjrxC5pN",
+        sliderImg:["https://steammachine.ru/gallery/4135345_43217051423926.jpg", "https://steammachine.ru/gallery/4135345_69317051423997.jpg", "https://steammachine.ru/gallery/4135345_95817051423975.jpg", "https://steammachine.ru/gallery/4135345_37717051423889.jpg"],
+        characteristics:{
+            os:"Windows 10 (64 bits)",
+            cpu: "Intel Core i5-2500K (3.3 GHz) / AMD FX-6300 X6 (3.5 GHz)",
+            ram: "8 GB ОЗУ",
+            videocard: "4 GB VRAM, GeForce GTX 750 Ti / Radeon RX 460",
+            DirectX: "9.0c",
+        },
+        discount: {
+            discountPrice: 233,
+            percent: 15
+        }
+        
+    },
+    {
+        id: 12,
+        image: "https://cdn.akamai.steamstatic.com/steam/apps/2171570/capsule_616x353.jpg?t=1714050622",
+        platform: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png",
+        price: 573,
+        currency: "₽",
+        region: "Россия",
+        language: "Русский",
+        title: "WHISKER WATERS",
+        availability: "В наличии",
+        description: "Уникальное отличие Whisker Waters от других ролевых игр в том, что она фокусируется на рыбалке и подходит к ней креативно. Игроки могут использовать множество рыбацких принадлежностей и приемов, исследуя полуоткрытый мир, проходя задания и вылавливая самых разнообразных рыб. Каждая рыба ведёт себя по-своему, что делает рыбалку куда более захватывающей, а радость от каждой выловленной рыбы – незабываемым.",
+        bgImage: BgWHISKERWATERS,
+        filter:{
+            mode: ['singleplayer',],
+            genreRU: ["Приключения","Казуальные", "RPG"],
+            genre: ["casual", "adventures", "RPG"],
+            release: 2022,
+            rating: 6
+        },
+        trailer: "https://www.youtube.com/embed/KQwBok8F0eE?si=55mTa7RthBBZ3jdl",
+        sliderImg:["https://assets-prd.ignimgs.com/2023/09/13/whiskerthumb-1694618036750.jpg", "https://cdn.freewebstore.com/origin/788695/71dpsidvl_ac_sl1500__1711413137641.jpg", "https://img.tapimg.net/market/images/5c1d04ad47332af2c89ccdb50e34daf3.jpg?imageView2/2/w/1080/h/1080/q/80/format/jpg/interlace/1/ignore-error/1", "https://img.tapimg.net/market/images/31daeb577dd1a871beeef7a65e561feb.jpg?imageView2/2/w/1080/h/1080/q/80/format/jpg/interlace/1/ignore-error/1"],
+        characteristics:{
+            os:"Windows 10",
+            cpu: "Ryzen 5 3600 or intel i7 9700",
+            ram: "8 GB ОЗУ",
+            videocard: "NVIDIA GeForce GTX 1650 / AMD equivalent",
+            DirectX: "версии 11",
+        },
+        discount: {
+            discountPrice: 400,
+            percent: 10
+        }
+        
+    },
+    {
+        id: 13,
+        image: "https://steammachine.ru/slider/1932960-220x126.webp",
+        platform: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png",
+        price: 800,
+        currency: "₽",
+        region: "Россия",
+        language: "Русский",
+        title: "DiRT Rally",
+        availability: "В наличии",
+        description: "DiRT Rally — самая реалистичная из ныне существующих гоночных игр. (Проверено игроками сообщества DiRT, прошедшими 80 милл. миль.) Почувствуйте напряжение пилота, который знает, как высока цена ошибки.",
+        bgImage: BgDiRTRally,
+        filter:{
+            mode: ['singleplayer'],
+            genreRU: ["Гонки","Симуляторы", "Спортивные"],
+            genre: ["race", "simulator", "sport"],
+            release: 2015,
+            rating: 4
+        },
+        trailer: "https://www.youtube.com/embed/E79ofEtVlBg?si=3AS9dHiKsZWgtd87",
+        sliderImg:["https://steammachine.ru/gallery/sh_1932960_34.jpg", "https://steammachine.ru/gallery/sh_1932960_42.jpg", "https://steammachine.ru/gallery/sh_1932960_8.jpg", "https://steammachine.ru/gallery/sh_1932960_5.jpg"],
+        characteristics:{
+            os:"64bit Versions of Windows 7, Windows 8, Windows 10",
+            cpu: "AMD FX Series or Intel Core i3 Series",
+            ram: "4 GB ОЗУ",
+            videocard: "AMD HD5450 or Nvidia GT430 or Intel HD4000 with 1GB of VRAM (DirectX 11 graphics card required)",
+            DirectX: "версии 11",
+        },
+        discount: {
+            discountPrice: 399,
+            percent: 67 
+        }
+        
+    },
+    {
+        id: 14,
+        image: "https://steammachine.ru/slider/1851982-220x126.webp",
+        platform: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/2048px-Steam_icon_logo.svg.png",
+        price: 600,
+        currency: "₽",
+        region: "Россия",
+        language: "Русский",
+        title: "Tabletop Simulator",
+        availability: "В наличии",
+        description: "Tabletop Simulator - единственный симулятор, в котором вы можете дать волю своей агрессии, перевернув стол! Нет никаких правил, которым нужно следовать: только вы, физическая песочница и ваши друзья. Создавайте собственные игры и играйте, как хотите! Безграничные игровые возможности!",
+        bgImage: BgTabletopSimulator,
+        filter:{
+            mode: ['singleplayer', 'cooperative', 'network'],
+            genreRU: ["Казуальные","Симуляторы", "Инди"],
+            genre: ["casual", "simulator", "indi" ],
+            release: 2015,
+            rating: 10
+        },
+        trailer: "https://www.youtube.com/embed/lKZVGZEuCHo?si=IN6nG5uVzbK89H5G",
+        sliderImg:["https://steammachine.ru/gallery/1851982_23714219312892.jpg", "https://steammachine.ru/gallery/1851982_57714219312915.jpg", "https://steammachine.ru/gallery/1851982_82114219313012.jpg", "https://steammachine.ru/gallery/1851982_82714219312995.jpg"],
+        characteristics:{
+            os:"Windows XP, Windows Vista, Windows 7, Windows 8, Windows 10",
+            cpu: "2.0 ГГц",
+            ram: "4 GB ОЗУ",
+            videocard: "с объемом видеопамяти не менее 256 МБ",
+            DirectX: "9.0c",
+        },
+        discount: {
+            discountPrice: 200,
+            percent: 3
+        }
         
     }
 ]

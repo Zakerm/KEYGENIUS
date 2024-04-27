@@ -27,5 +27,9 @@ export interface IGameCards{
         videocard?: string
         DirectX?: string
     }
+    discount?: {
+        discountPrice?: number
+        percent?: any
+    }
     
 }
