@@ -1,37 +1,28 @@
 // CustomArrows.tsx
 import React from "react";
 import styles from "./CustomArrows.module.css";
-import ArrowLeft from "../../../../../../img/Slider/arrow-left.png";
-import ArrowRight from "../../../../../../img/Slider/arrow-right.png";
+import img from "../../../../../../img/Slider/DeadCells-sp-banner.webp";
 
-// Компонент для кастомной стрелки "назад"
-const SamplePrevArrow: React.FC<{
-  className: string;
+interface CustomArrowProps {
   onClick: () => void;
-}> = (props) => {
-  const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <span className={styles.customPrevArrow}>
-        <img src={ArrowLeft} alt="ArrowLeft" />
-      </span>
-    </div>
-  );
-};
+  direction: "left" | "right"; // Направление стрелки
+}
 
-// Компонент для кастомной стрелки "вперед"
-const SampleNextArrow: React.FC<{
-  className: string;
-  onClick: () => void;
-}> = (props) => {
-  const { className, onClick } = props;
+function CustomLeftArrow({ onClick }: CustomArrowProps) {
   return (
-    <div className={className} onClick={onClick}>
-      <span className={styles.customNextArrow}>
-        <img src={ArrowRight} alt="ArrowRight" />
-      </span>
-    </div>
+    // <button onClick={onClick} className={styles.customLeftArrow}>
+    //   &lt;
+    // </button>
+    <img src={img} alt="" />
   );
-};
+}
 
-export { SamplePrevArrow, SampleNextArrow };
+function CustomRightArrow({ onClick }: CustomArrowProps) {
+  return (
+    <button onClick={onClick} className={styles.customRightArrow}>
+      &gt;
+    </button>
+  );
+}
+
+export { CustomLeftArrow, CustomRightArrow };

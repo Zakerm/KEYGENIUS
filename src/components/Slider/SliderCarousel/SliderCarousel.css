@@ -26,6 +26,56 @@
 
 
 
+.parent
+{
+  background-color: black;
+}
+
+.slider {
+  margin:0 20px;
+  overflow:"hidden";
+  padding: 2rem 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider img {
+  width: 100%;
+  border-radius:10px;
+  transition: transform 0.3s ease; /* добавляем плавную анимацию */
+}
+
+.slider:hover img {
+  transform: scale(1.1); /* увеличиваем размер при наведении */
+}
+
+.react-multi-carousel-list {
+padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button{
+border: none;
+background: rgb(255, 68, 68);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button{
+background: rgb(47, 78, 163) !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(1% + 1px);
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(1% + 3px);
+}
+
+.react-multi-carousel-list {
+  padding: 0;
+}
+
+
+
+
 
 
 

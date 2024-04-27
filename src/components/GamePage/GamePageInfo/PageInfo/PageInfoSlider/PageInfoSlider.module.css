@@ -1,32 +1,7 @@
 /* PageInfoSlider.module.css */
 
-/* Контейнер слайдера */
-.sliderContainer {
-    position: relative;
-  }
   
-  /* Обертка для каждого элемента слайдера */
-  .sliderImageWrapper {
-    cursor: pointer;
-    padding: 0 5px; /* Добавляем отступы внутри каждого элемента слайдера */
-    /* display: flex; */
-  
-  }
-  
-  /* Контейнер слайдера */
-  .sliderContainer {
-    margin: 0 -5px; /* Добавляем отрицательные отступы справа и слева для контейнера слайдера */
-    width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    align-content: center; */
-  }
-  
-  /* Стили для изображений в слайдере */
-  .sliderImage {
-    width: 100%;
-    height: 200px; /* Высота изображения */
-  }
+
   
   /* Модальное окно и его фон */
   .modalBackdrop {
@@ -81,6 +56,32 @@
     transition: transform 0.3s ease; /* Плавная анимация изменения размера */
   }
 
+  .parent
+  {
+    background-color: inherit;
+  }
+
+  .slider {
+    margin:0 10px;
+    overflow:"hidden";
+    padding: 2rem 0;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .slider img {
+    width: 100%;
+    border-radius:10px;
+    transition: transform 0.3s ease; /* добавляем плавную анимацию */
+   
+    height: 200px; /* Высота изображения */
+  }
+  
+  .slider:hover img {
+    transform: scale(1.1); /* увеличиваем размер при наведении */
+    
+  }
+
 
 
   
@@ -105,6 +106,5 @@
     transform: scale(1.1);
   } */
 
-  
 
   

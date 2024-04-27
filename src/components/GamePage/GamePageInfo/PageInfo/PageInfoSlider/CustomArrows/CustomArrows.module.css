@@ -1,44 +1,39 @@
-.customPrevArrow,
-.customNextArrow {
-  color: #cfc7c7;
-  position: absolute;
-  z-index: 2;
+/* CustomArrows.module.css */
+.custom-arrows {
+  display: flex;
+  justify-content: space-between; /* Распределить элементы по краям */
+  align-items: center; /* Выравнять по центру по вертикали */
+  position: absolute; /* Позиционируем стрелки абсолютно */
+  top: 50%; /* Размещаем стрелки по центру вертикально */
+  transform: translateY(-50%); /* Корректируем позицию по вертикали */
+  width: 100%; /* Занимаем всю ширину родительского элемента */
+}
+
+.custom-arrow {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-  font-size: 60px; /* Уменьшенный размер шрифта */
-  top: 40%;
-  text-align: center; /* Центрирование текста внутри стрелки */
-  line-height: 50px; /* Выравнивание текста по вертикали */
-  display: inline-block; /* Уменьшение области клика до размеров содержимого */
-  box-sizing: border-box; /* Учет padding внутри размеров элемента */
-  
- 
-  
+  font-size: 24px; /* Размер стрелки */
+  z-index: 999; /* Устанавливаем z-index для стрелок */
 }
 
-.customPrevArrow {
-  left: -55px;
+.custom-arrow::before {
+  content: "";
+  display: inline-block;
+  width: 10px; /* Ширина стрелки */
+  height: 10px; /* Высота стрелки */
+  border-width: 2px; /* Толщина стрелки */
+  border-style: solid;
+  border-color: black;
+  border-left-color: transparent; /* Цвет левой стороны стрелки */
+  border-right-color: transparent; /* Цвет правой стороны стрелки */
+  transform: rotate(-45deg); /* Поворот на 45 градусов влево */
 }
 
-.customNextArrow {
-  right: -55px;
-  
+.custom-arrow.right::before {
+  transform: rotate(45deg); /* Поворот на 45 градусов вправо */
 }
 
-.customPrevArrow:hover,
-.customNextArrow:hover {
-  color: #f7f4f4;
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + 1px);
 }
-
-.customPrevArrow img, .customNextArrow img{
-   width: 50px;
-}
-
-.customPrevArrow img:hover, .customNextArrow img:hover{
-  width: 50px;
-  background-color: #fff;
-  border-radius: 50%;
- 
-  
-}
-
-

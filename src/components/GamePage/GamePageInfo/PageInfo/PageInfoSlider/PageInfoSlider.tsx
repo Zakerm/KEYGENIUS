@@ -1,15 +1,35 @@
 import React, { useState } from "react";
-import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import styles from "./PageInfoSlider.module.css";
-import { SampleNextArrow, SamplePrevArrow } from "./CustomArrows/CustomArrows";
 
 interface PageInfoSliderProps {
   sliderImages: string[]; // Принимаем массив изображений в props
 }
 
-export default function PageInfoSlider(props: PageInfoSliderProps) {
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 4,
+    slidesToSlide: 1,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
+export default function SliderCarousel({ sliderImages }: PageInfoSliderProps) {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
 
@@ -31,39 +51,30 @@ export default function PageInfoSlider(props: PageInfoSliderProps) {
     }
   };
 
-  const settings = {
-    dots: false,
-    infinite: true,
-
-    // prevArrow: <SamplePrevArrow className="prev-arrow" onClick={() => {}} />, // Указываем компонент для кастомной стрелки "назад"
-    //nextArrow: <SampleNextArrow className="next-arrow" onClick={() => {}} />, // Указываем компонент для кастомной стрелки "вперед"
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  };
-
-  const customArrows = {
-    prevArrow: <SamplePrevArrow className="" onClick={() => {}} />,
-    nextArrow: <SampleNextArrow className="" onClick={() => {}} />,
-  };
-
   return (
-    <div className={styles.sliderContainer}>
-      <Slider {...settings} {...customArrows}>
-        {props.sliderImages.map((image, index) => (
-          <div
-            key={index}
-            className={styles.sliderImageWrapper}
-            onClick={() => openModal(image)}
-          >
-            <img
-              className={styles.sliderImage}
-              src={image}
-              alt={`Slide ${index + 1}`}
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className={styles.parent}>
+      <Carousel
+        responsive={responsive}
+        swipeable={true}
+        autoPlay={true}
+        draggable={true}
+        showDots={false}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {sliderImages.map((imageUrl, index) => {
+          return (
+            <div
+              className={styles.slider}
+              key={index}
+              onClick={() => openModal(imageUrl)}
+            >
+              <img src={imageUrl} alt="slider" />
+            </div>
+          );
+        })}
+      </Carousel>
 
       {modalOpen && (
         <div className={styles.modalBackdrop} onClick={handleBackdropClick}>
