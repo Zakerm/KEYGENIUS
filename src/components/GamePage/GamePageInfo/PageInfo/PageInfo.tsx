@@ -9,6 +9,26 @@ interface GameInfo {
 }
 
 export default function PageInfo(props: GameInfo) {
+  const calculateDiscountedPrice = (): number | undefined => {
+    if (props.info.discount && props.info.discount.percent !== undefined) {
+      const discountedPrice =
+        props.info.price * (1 - props.info.discount.percent / 100);
+      return Math.ceil(discountedPrice);
+    }
+    return undefined;
+  };
+
+  const renderDiscount = () => {
+    if (props.info.discount && props.info.discount.percent !== undefined) {
+      return (
+        <div className={styles.discount}>
+          <p className={styles.discont}>-{props.info.discount.percent}%</p>
+        </div>
+      );
+    }
+    return null; // скрыть блок скидки, если скидки нет или отсутствует процент скидки
+  };
+
   useEffect(() => {
     document.title = `Купить ${props.info.title}`;
   }, [props.info.title]);
@@ -71,13 +91,18 @@ export default function PageInfo(props: GameInfo) {
                   </p>
                 </div>
               </div>
+
               <div
                 className={`${styles.game_price} flex flex-col items-center`}
               >
                 <p className={styles.game_price_text}>
-                  {props.info.price} {props.info.currency}
+                  {calculateDiscountedPrice() !== undefined
+                    ? calculateDiscountedPrice()
+                    : props.info.price}{" "}
+                  {props.info.currency}
                 </p>
-
+                {renderDiscount()}{" "}
+                {/* Вызов функции для отображения блока скидки */}
                 <a href="#!" className={styles.game_price_btn}>
                   <div className={styles.price_btn}>Купить</div>
                 </a>

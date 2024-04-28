@@ -349,7 +349,6 @@ export const GameCards: IGameCards[] =[
             DirectX: "9.0c",
         },
         discount: {
-            discountPrice: 233,
             percent: 15
         }
         
@@ -384,7 +383,6 @@ export const GameCards: IGameCards[] =[
             DirectX: "версии 11",
         },
         discount: {
-            discountPrice: 400,
             percent: 10
         }
         
@@ -419,7 +417,6 @@ export const GameCards: IGameCards[] =[
             DirectX: "версии 11",
         },
         discount: {
-            discountPrice: 399,
             percent: 67 
         }
         
@@ -454,7 +451,6 @@ export const GameCards: IGameCards[] =[
             DirectX: "9.0c",
         },
         discount: {
-            discountPrice: 200,
             percent: 3
         }
         

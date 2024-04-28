@@ -36,9 +36,17 @@ const CatalogContentMiddle: React.FC<CatalogContentMiddleProps> = () => {
     } else if (sortBy === "dateOld") {
       return (a.filter?.release || 0) - (b.filter?.release || 0);
     } else if (sortBy === "priceLow") {
-      return a.price - b.price;
+      const discountedPriceA =
+        a.price - ((a.discount?.percent || 0) * a.price) / 100;
+      const discountedPriceB =
+        b.price - ((b.discount?.percent || 0) * b.price) / 100;
+      return discountedPriceA - discountedPriceB;
     } else if (sortBy === "priceHigh") {
-      return b.price - a.price;
+      const discountedPriceA =
+        a.price - ((a.discount?.percent || 0) * a.price) / 100;
+      const discountedPriceB =
+        b.price - ((b.discount?.percent || 0) * b.price) / 100;
+      return discountedPriceB - discountedPriceA;
     } else {
       return 0;
     }

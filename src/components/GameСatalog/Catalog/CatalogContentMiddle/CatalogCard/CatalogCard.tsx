@@ -8,6 +8,26 @@ interface CatalogCardProps {
 }
 
 export default function CatalogCard(props: CatalogCardProps) {
+  const calculateDiscountedPrice = (): number | undefined => {
+    if (props.card.discount && props.card.discount.percent !== undefined) {
+      const discountedPrice =
+        props.card.price * (1 - props.card.discount.percent / 100);
+      return Math.ceil(discountedPrice);
+    }
+    return undefined;
+  };
+
+  const renderDiscount = () => {
+    if (props.card.discount && props.card.discount.percent !== undefined) {
+      return (
+        <div className={styles.discount}>
+          <p className={styles.discont}>-{props.card.discount.percent}%</p>
+        </div>
+      );
+    }
+    return null; // скрыть блок скидки, если скидки нет или отсутствует процент скидки
+  };
+
   const genres = props.card.filter?.genreRU
     ? props.card.filter.genreRU.join(",")
     : "";
@@ -39,7 +59,13 @@ export default function CatalogCard(props: CatalogCardProps) {
           </div>
         </div>
         <div className={`${styles.card_game_price} flex items-center  `}>
-          <p>{props.card.price}</p>
+          {renderDiscount()} {/* Вызов функции для отображения блока скидки */}
+          <p>
+            {" "}
+            {calculateDiscountedPrice() !== undefined
+              ? calculateDiscountedPrice()
+              : props.card.price}{" "}
+          </p>
           <p>{props.card.currency}</p>
         </div>
       </div>

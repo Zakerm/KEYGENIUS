@@ -1,6 +1,7 @@
 .MenuGame_card
 {
     width: 100%;
+   
     
 }
 
@@ -26,6 +27,7 @@
 {
     display: flex;
     justify-content: space-between;
+   
 
 }
 
@@ -41,12 +43,31 @@
     /* height: 50px; */
     max-width: 100%;
     height: auto;
+   
 }
+
+
 
 
 .MenuGame_card_price
 {
     font-size: 25px;
+    margin-left: 5px;
+  
+}
+
+.discount
+{
+    
+    
+    margin-left:auto;
+   
+}
+
+.discont
+{
+    font-size: 25px;
+    background-color: green;
 }
 
 

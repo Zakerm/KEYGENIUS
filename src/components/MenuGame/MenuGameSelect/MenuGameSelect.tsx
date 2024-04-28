@@ -10,7 +10,7 @@ interface MenuGameSelectProps {
 export default function MenuGameSelect({ onTypeChange }: MenuGameSelectProps) {
   const [selectedType, setSelectedType] = useState<
     "priceReduction" | "topSale" | "newGame" | "recommendedGames"
-  >();
+  >("priceReduction"); // По умолчанию выбран тип "priceReduction"
 
   const handleClick = (
     type: "priceReduction" | "topSale" | "newGame" | "recommendedGames"

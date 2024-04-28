@@ -8,6 +8,26 @@ interface GameCardProps {
 }
 
 export default function MenuGameCard(props: GameCardProps) {
+  const calculateDiscountedPrice = (): number | undefined => {
+    if (props.card.discount && props.card.discount.percent !== undefined) {
+      const discountedPrice =
+        props.card.price * (1 - props.card.discount.percent / 100);
+      return Math.ceil(discountedPrice);
+    }
+    return undefined;
+  };
+
+  const renderDiscount = () => {
+    if (props.card.discount && props.card.discount.percent !== undefined) {
+      return (
+        <div className={styles.discount}>
+          <p className={styles.discont}>-{props.card.discount.percent}%</p>
+        </div>
+      );
+    }
+    return null; // скрыть блок скидки, если скидки нет или отсутствует процент скидки
+  };
+
   return (
     <Link
       className={`${styles.MenuGame_card_link} `}
@@ -24,7 +44,7 @@ export default function MenuGameCard(props: GameCardProps) {
           />
         </div>
         <div
-          className={`${styles.MenuGame_card_info} flex flex-row items-center py-0.5 pl-1`}
+          className={`${styles.MenuGame_card_info} flex  items-center py-0.5 pl-1`}
         >
           <div className={styles.MenuGame_card_icon}>
             <img
@@ -33,9 +53,13 @@ export default function MenuGameCard(props: GameCardProps) {
               alt=""
             />
           </div>
+          {renderDiscount()} {/* Вызов функции для отображения блока скидки */}
           <div className={`${styles.MenuGame_card_price} pr-1`}>
             <p className="">
-              {props.card.price} {props.card.currency}
+              {calculateDiscountedPrice() !== undefined
+                ? calculateDiscountedPrice()
+                : props.card.price}{" "}
+              {props.card.currency}
             </p>
           </div>
         </div>
