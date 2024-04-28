@@ -1,5 +1,5 @@
 import React from "react";
-import FooterLogo from "../../img/main/header/logo.jpg";
+import FooterLogo from "../../img/main/header/logo.png";
 import styles from "./Footer.module.css";
 
 // footer flex flex-col justify-center items-center

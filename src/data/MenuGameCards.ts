@@ -27,6 +27,7 @@ export const GameCards: IGameCards[] =[
         description:"Сражайтесь и гоняйте по смертельно опасным дорогам постапокалиптической Америки. Играйте за Дикона Сент-Джона, номада и охотника за наградами, кочующего по разбитым дорогам в поисках смысла жизни в этом приключенческом боевике с открытым миром.",
         currency: "₽",
         bgImage: BgDaysGone,
+        numberSales: 256,
         filter:{
             mode: ["singleplayer"],
             genreRU: ["Экшен", "Приключения"],
@@ -57,6 +58,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Уникальный психологический экшен-триллер Beyond: Two Souls с участием голливудских суперзвезд Эллен Пейдж и Виллема Дефо уносит вас в увлекательное путешествие по всему миру, в котором вы проживете часть удивительной жизни Джоди Холмс",
         bgImage: BgBeyondTwoSouls,
+        numberSales: 500,
         filter:{
             mode: ["singleplayer"],
             genreRU: ["Экшен", "Приключения"],
@@ -86,6 +88,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Dark Souls продолжит испытывать игроков на прочность в новой главе знаменитой серии, собравшей множество наград и определившей лицо жанра. Соберитесь с духом и погрузитесь во тьму!",
         bgImage: BgDARKSOULSIII,
+        numberSales: 10,
         filter:{
             mode: ["singleplayer"],
             genreRU: ["Экшен"],
@@ -115,6 +118,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "НОВЫЙ ФЭНТЕЗИЙНЫЙ РОЛЕВОЙ БОЕВИК. Восстань, погасшая душа! Междуземье ждёт своего повелителя. Пусть благодать приведёт тебя к Кольцу Элден.",
         bgImage: BgELDENRING,
+        numberSales: 200,
         filter:{
             mode: ['singleplayer', 'cooperative'],
             genreRU: ["Экшен", "Приключения", "RPG"],
@@ -145,6 +149,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Столкнитесь лицом к лицу с опасностями в Олимпийской зоне отчуждения, где машина — ваш единственный шанс на спасение в этом приключении на выживание! Собирайте ресурсы, грузите их в свой универсал и давите на газ, чтобы выжить.",
         bgImage: BgPacificDrive,
+        numberSales: 350,
         filter:{
             mode: ["singleplayer"],
             genreRU: ["Экшен", "Приключения", "Инди", "Гонки"],
@@ -174,6 +179,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Антология The Dark Pictures — цикл нелинейных киноигр в жанре хоррор с поддержкой игры вдвоём по сети. В Man of Medan пятеро друзей отправились на дайвинг, но шторм превратил их поездку в настоящий кошмар.",
         bgImage: BgTheDarkPicturesAnthologyManofMedan,
+        numberSales: 400,
         filter:{
             mode: ['singleplayer', 'network'],
             genreRU: ["Приключения"],
@@ -204,6 +210,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
         bgImage: BgTheWitcher3WildHunt,
+        numberSales: 126,
         filter:{
             mode: ["singleplayer"],
             genreRU: ["Экшен", "Приключения", "RPG"],
@@ -233,6 +240,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Kingdom Come: Deliverance – это захватывающая РПГ с открытым миром, которая перенесёт вас в эпическое приключение в Священную Римскую империю. Отомстите за смерть ваших родителей, сражаясь с силами вторжения, выполняйте квесты, изменяйте мир своими решениями.",
         bgImage: BgKingdomComeDeliverancefrom,
+        numberSales: 370,
         filter:{
             mode: ["singleplayer"],
             genreRU: ["Экшен", "Приключения", "RPG"],
@@ -262,6 +270,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Возглавьте сопротивление превосходящим военным силам в партизанской войне в открытом динамичном мире Homefront®: The Revolution и разожгите революцию, а угнетенные поднимутся на борьбу с оккупантами.",
         bgImage: BgHomefrontTheRevolution,
+        numberSales: 104,
         filter:{
             mode: ["singleplayer"],
             genreRU: ["Экшен", "Приключения"],
@@ -291,6 +300,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "В F.E.A.R. 3 вы найдете все качества, присущие серии F.E.A.R.: ужасающие паранормальные события, жаркие битвы и драматичный сюжет.",
         bgImage: BgFEAR3,
+        numberSales: 2,
         filter:{
             mode: ['singleplayer', 'cooperative'],
             genreRU: ["Экшен"],
@@ -321,6 +331,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Зловещая угроза нависла над Диким Западом. В одиночку или сообща сражайтесь с кровожадными чудищами в беспощадных, взрывных боях и покажите всем, как это делается. Искореняйте полчища вампиров заправленной молнией рукавицей и станьте супергероем Дикого Запада.",
         bgImage: BgEvilWest,
+        numberSales: 70,
         filter:{
             mode: ['singleplayer', 'cooperative', 'network'],
             genreRU: ["Приключения"],
@@ -355,6 +366,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Уникальное отличие Whisker Waters от других ролевых игр в том, что она фокусируется на рыбалке и подходит к ней креативно. Игроки могут использовать множество рыбацких принадлежностей и приемов, исследуя полуоткрытый мир, проходя задания и вылавливая самых разнообразных рыб. Каждая рыба ведёт себя по-своему, что делает рыбалку куда более захватывающей, а радость от каждой выловленной рыбы – незабываемым.",
         bgImage: BgWHISKERWATERS,
+        numberSales: 1000,
         filter:{
             mode: ['singleplayer',],
             genreRU: ["Приключения","Казуальные", "RPG"],
@@ -389,6 +401,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "DiRT Rally — самая реалистичная из ныне существующих гоночных игр. (Проверено игроками сообщества DiRT, прошедшими 80 милл. миль.) Почувствуйте напряжение пилота, который знает, как высока цена ошибки.",
         bgImage: BgDiRTRally,
+        numberSales: 10000,
         filter:{
             mode: ['singleplayer'],
             genreRU: ["Гонки","Симуляторы", "Спортивные"],
@@ -423,6 +436,7 @@ export const GameCards: IGameCards[] =[
         availability: "В наличии",
         description: "Tabletop Simulator - единственный симулятор, в котором вы можете дать волю своей агрессии, перевернув стол! Нет никаких правил, которым нужно следовать: только вы, физическая песочница и ваши друзья. Создавайте собственные игры и играйте, как хотите! Безграничные игровые возможности!",
         bgImage: BgTabletopSimulator,
+        numberSales: 325,
         filter:{
             mode: ['singleplayer', 'cooperative', 'network'],
             genreRU: ["Казуальные","Симуляторы", "Инди"],

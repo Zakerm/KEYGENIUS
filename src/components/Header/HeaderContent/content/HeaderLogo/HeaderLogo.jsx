@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logoImage from "../../../../../img/main/header/logo.jpg";
+import logoImage from "../../../../../img/main/header/logo.png";
 import { NavLink } from "react-router-dom";
 import styles from "./HeaderLogo.module.css";
 
