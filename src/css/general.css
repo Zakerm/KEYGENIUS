@@ -33,6 +33,13 @@ body
   padding: 43px 0 43px 0;
 }
 
+header
+{
+  position: relative;
+}
+
+
+
 @media (max-width:1230px) {
   .container
 {

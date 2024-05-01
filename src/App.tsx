@@ -7,19 +7,22 @@ import SupportProductsComp from "./components/Support/MainSupport/Content/Suppor
 import SupportPaymentsComp from "./components/Support/MainSupport/Content/SupportPayments/SupportPaymentsComp";
 import SupportProblemsComp from "./components/Support/MainSupport/Content/SuppportProblems/SupportProblemsComp";
 import SupportEllipsisComp from "./components/Support/MainSupport/Content/SupportEllipsis/SupportEllipsisComp";
+import { CartProvider } from "./components/Header/HeaderContent/content/HeaderRight/HeaderCart/CartContext";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/game/:id" element={<GamePage />} />
-      <Route path="/catalog" element={<GameCatalog />} />
-      <Route path="/support" element={<Support />} />
-      <Route path="/support/products" element={<SupportProductsComp />} />
-      <Route path="/support/payments" element={<SupportPaymentsComp />} />
-      <Route path="/support/problems" element={<SupportProblemsComp />} />
-      <Route path="/support/ellipsis" element={<SupportEllipsisComp />} />
-    </Routes>
+    <CartProvider>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/game/:id" element={<GamePage />} />
+        <Route path="/catalog" element={<GameCatalog />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/support/products" element={<SupportProductsComp />} />
+        <Route path="/support/payments" element={<SupportPaymentsComp />} />
+        <Route path="/support/problems" element={<SupportProblemsComp />} />
+        <Route path="/support/ellipsis" element={<SupportEllipsisComp />} />
+      </Routes>
+    </CartProvider>
   );
 }
 

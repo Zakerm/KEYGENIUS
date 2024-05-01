@@ -39,6 +39,7 @@
 {
     font-size: 25px;
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .game
@@ -54,6 +55,7 @@
     justify-content: center;
     position: absolute;
     right: 0;
+    
     
 }
 
@@ -175,12 +177,6 @@
     font-size: 30px;
   }
  
-  
-
- 
-
-
-
 /* Экран ноута */
 @media (max-width:1230px) {
     .game_title

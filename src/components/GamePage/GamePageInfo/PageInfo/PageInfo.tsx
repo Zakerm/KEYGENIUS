@@ -3,12 +3,29 @@ import React, { useState, useEffect } from "react";
 import { IGameCards } from "../../../../models/GameCardsModels";
 import styles from "./PageInfo.module.css";
 import PageInfoSlider from "./PageInfoSlider/PageInfoSlider";
+import { useCart } from "../../../Header/HeaderContent/content/HeaderRight/HeaderCart/CartContext";
 
 interface GameInfo {
   info: IGameCards;
 }
 
 export default function PageInfo(props: GameInfo) {
+  const { cart, addToCart, removeFromCart } = useCart();
+
+  const isItemInCart = cart.some((item) => item.id === props.info.id);
+
+  const handleAddToCart = () => {
+    if (!isItemInCart) {
+      addToCart(props.info);
+    } else {
+      alert("Товар уже добавлен в корзину");
+    }
+  };
+
+  const handleRemoveFromCart = () => {
+    removeFromCart(props.info.id.toString());
+  };
+
   const calculateDiscountedPrice = (): number | undefined => {
     if (props.info.discount && props.info.discount.percent !== undefined) {
       const discountedPrice =
@@ -106,6 +123,23 @@ export default function PageInfo(props: GameInfo) {
                 <a href="#!" className={styles.game_price_btn}>
                   <div className={styles.price_btn}>Купить</div>
                 </a>
+                {isItemInCart ? (
+                  <a
+                    href="#!"
+                    className={styles.game_price_btn}
+                    onClick={handleRemoveFromCart}
+                  >
+                    <div className={styles.price_btn}>Удалить из корзины</div>
+                  </a>
+                ) : (
+                  <a
+                    href="#!"
+                    className={styles.game_price_btn}
+                    onClick={handleAddToCart}
+                  >
+                    <div className={styles.price_btn}>Добавить в корзину</div>
+                  </a>
+                )}
               </div>
             </div>
 
